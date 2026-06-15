@@ -334,7 +334,7 @@
     <script>
         let questionBank = []; // Mảng rỗng chờ nhận dữ liệu
         let currentQuiz = [];
-        let history = [];
+        let history = JSON.parse(localStorage.getItem('quizHistory') || '[]');
         let isSubmitted = false;
         const DESIRED = 40; // số câu cho mỗi đề, giữ cố định
 
@@ -392,6 +392,7 @@
                             document.getElementById('score-display').innerText = `Điểm: --/${DESIRED}`;
                             document.getElementById('submit-btn').style.display = isSubmitted ? 'none' : 'block';
                             document.getElementById('next-quiz-btn').style.display = isSubmitted ? 'inline-block' : 'none';
+                            updateHistoryUI();
                             return; // không sinh đề mới
                         }
                     }
@@ -433,6 +434,7 @@
             document.getElementById('score-display').innerText = `Điểm: --/${DESIRED}`;
             document.getElementById('next-quiz-btn').style.display = 'none';
             document.getElementById('submit-btn').style.display = 'block';
+            updateHistoryUI();
             window.scrollTo(0, 0);
         }
 
@@ -518,6 +520,9 @@
             let dateString = now.toLocaleDateString('vi-VN') + " " + now.toLocaleTimeString('vi-VN');
             history.push({ date: dateString, score: score, total: total });
             updateHistoryUI();
+            try {
+                localStorage.setItem('quizHistory', JSON.stringify(history));
+            } catch (e) { console.warn('Không lưu được lịch sử vào localStorage', e); }
             
             // Xóa đề đã lưu để lần làm tiếp theo (sau khi nộp) sẽ tạo bộ đề mới
             try {
