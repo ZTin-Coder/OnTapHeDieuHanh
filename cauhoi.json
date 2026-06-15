@@ -1,0 +1,4986 @@
+[
+    {
+        "question": "Biến dùng chung X = 10. Hai tiến trình P1 và P2 cùng thực hiện lệnh X = X + 1 mà không có cơ chế đồng bộ. Giá trị cuối cùng của X có thể là:",
+        "options": [
+            "A. 10",
+            "B. 11",
+            "C. 12",
+            "D. 11 hoặc 12"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Một mutex có trạng thái ban đầu là unlocked. Tiến trình P1 gọi lock(mutex). Trạng thái mutex sau đó là:",
+        "options": [
+            "A. unlocked",
+            "B. locked",
+            "C. waiting",
+            "D. blocked"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Có 3 tiến trình cùng truy cập vùng găng (critical section). Sử dụng mutex cho phép bao nhiêu tiến trình vào vùng găng cùng lúc?",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 3"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore S được khởi tạo bằng 1. Sau khi tiến trình thực hiện lệnh wait(S), giá trị của S là:",
+        "options": [
+            "A. -1",
+            "B. 0",
+            "C. 1",
+            "D. 2"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore S = 3. Có 2 tiến trình thực hiện wait(S). Giá trị mới của S là:",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 3"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore S = 2. Có 3 tiến trình liên tiếp thực hiện wait(S). Tiến trình thứ ba sẽ:",
+        "options": [
+            "A. Thực thi bình thường",
+            "B. Tăng S",
+            "C. Bị chặn",
+            "D. Kết thúc"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong cơ chế mutex, nếu một tiến trình đã lock mutex thì tiến trình khác:",
+        "options": [
+            "A. Vẫn vào vùng găng",
+            "B. Phải chờ",
+            "C. Được ưu tiên hơn",
+            "D. Hủy mutex"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore đếm (counting semaphore) khởi tạo bằng 5 biểu diễn:",
+        "options": [
+            "A. 5 CPU",
+            "B. 5 vùng nhớ",
+            "C. 5 tài nguyên giống nhau",
+            "D. 5 tiến trình"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nếu semaphore S = 0 và tiến trình thực hiện signal(S) thì:",
+        "options": [
+            "A. S = -1",
+            "B. S = 0",
+            "C. S = 1",
+            "D. Lỗi"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Điều kiện nào sau đây bắt buộc phải có để tránh race condition?",
+        "options": [
+            "A. Định thời CPU",
+            "B. Bộ nhớ ảo",
+            "C. Mutual Exclusion",
+            "D. Swapping"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Một semaphore nhị phân (binary semaphore) chỉ có thể nhận giá trị:",
+        "options": [
+            "A. 0 hoặc 1",
+            "B. -1 hoặc 1",
+            "C. 1 hoặc 2",
+            "D. 0 đến n"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Tiến trình thực hiện signal(S) nhằm mục đích:",
+        "options": [
+            "A. Giảm semaphore",
+            "B. Tăng semaphore",
+            "C. Khóa CPU",
+            "D. Hủy tài nguyên"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu S = 1 và hai tiến trình cùng thực hiện wait(S), số tiến trình được vào vùng găng là:",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 3"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong bài toán Producer-Consumer, semaphore empty dùng để:",
+        "options": [
+            "A. Đếm vị trí còn trống",
+            "B. Đếm sản phẩm",
+            "C. Khóa mutex",
+            "D. Đếm tiến trình"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Buffer có kích thước 10. Ban đầu semaphore empty bằng:",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 10",
+            "D. 11"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Buffer kích thước 10 đã chứa 4 sản phẩm. Giá trị semaphore full là:",
+        "options": [
+            "A. 4",
+            "B. 6",
+            "C. 10",
+            "D. 14"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Buffer kích thước 10 chứa 4 sản phẩm. Giá trị semaphore empty là:",
+        "options": [
+            "A. 4",
+            "B. 5",
+            "C. 6",
+            "D. 10"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong Producer-Consumer, producer phải thực hiện lệnh nào trước khi ghi dữ liệu?",
+        "options": [
+            "A. signal(empty)",
+            "B. wait(empty)",
+            "C. signal(full)",
+            "D. signal(mutex)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Consumer lấy một sản phẩm khỏi buffer sẽ thực hiện:",
+        "options": [
+            "A. signal(empty)",
+            "B. wait(empty)",
+            "C. wait(full)",
+            "D. wait(mutex)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Semaphore mutex trong Producer-Consumer thường được khởi tạo bằng:",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 10"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu mutex = 0 thì tiến trình khác muốn vào vùng găng:",
+        "options": [
+            "A. Được phép vào",
+            "B. Chờ",
+            "C. Tăng mutex",
+            "D. Kết thúc"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong bài toán Readers-Writers, nhiều reader được phép:",
+        "options": [
+            "A. Ghi đồng thời",
+            "B. Đọc đồng thời",
+            "C. Ghi và đọc cùng lúc",
+            "D. Không được đọc"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong Readers-Writers, writer được phép ghi khi:",
+        "options": [
+            "A. Có ít nhất 1 reader",
+            "B. Không có reader nào",
+            "C. Có 2 reader",
+            "D. Có semaphore = 2"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong bài toán Dining Philosophers có 5 triết gia thì có bao nhiêu chiếc đũa?",
+        "options": [
+            "A. 4",
+            "B. 5",
+            "C. 6",
+            "D. 10"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu tất cả 5 triết gia cùng cầm đũa bên trái trước thì có thể dẫn đến:",
+        "options": [
+            "A. Race condition",
+            "B. Starvation",
+            "C. Deadlock",
+            "D. Interrupt"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Semaphore S = 5. Sau 3 lần wait(S), giá trị S là:",
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore S = 2. Thực hiện: wait(S) wait(S) signal(S) Giá trị cuối cùng của S là:",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 3"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Buffer 20 ô chứa 8 sản phẩm. Giá trị empty là:",
+        "options": [
+            "A. 8",
+            "B. 10",
+            "C. 12",
+            "D. 20"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Buffer 15 ô chứa 9 sản phẩm. Giá trị full là:",
+        "options": [
+            "A. 6",
+            "B. 9",
+            "C. 15",
+            "D. 24"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Buffer 12 ô chứa 7 sản phẩm. Consumer lấy 1 sản phẩm. Giá trị full mới là:",
+        "options": [
+            "A. 5",
+            "B. 6",
+            "C. 7",
+            "D. 8"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Buffer 12 ô chứa 7 sản phẩm. Consumer lấy 1 sản phẩm. Giá trị empty mới là:",
+        "options": [
+            "A. 5",
+            "B. 6",
+            "C. 7",
+            "D. 8"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore S = 1. Có 4 tiến trình cùng yêu cầu vào vùng găng. Số tiến trình phải chờ là:",
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Semaphore S = 3. Có 5 tiến trình thực hiện wait(S). Bao nhiêu tiến trình bị chặn?",
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong Dining Philosophers với 5 triết gia, nếu giới hạn tối đa 4 người được ngồi ăn cùng lúc thì:",
+        "options": [
+            "A. Chắc chắn deadlock",
+            "B. Tránh được deadlock",
+            "C. Tăng starvation",
+            "D. Không thay đổi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu 5 triết gia cần 2 chiếc đũa để ăn, tổng số tài nguyên cần là:",
+        "options": [
+            "A. 5",
+            "B. 6",
+            "C. 8",
+            "D. 10"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Một writer đang ghi dữ liệu. Có 4 reader yêu cầu đọc. Số reader được phép đọc là:",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 4"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Có 3 reader đang đọc. Một writer đến. Writer sẽ:",
+        "options": [
+            "A. Ghi ngay",
+            "B. Chờ",
+            "C. Hủy tiến trình",
+            "D. Tăng semaphore"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore S = 4. Sau 2 lần wait và 1 lần signal, S bằng:",
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Một mutex bảo vệ biến đếm. Có 10 tiến trình cùng truy cập. Tại một thời điểm tối đa bao nhiêu tiến trình sửa biến?",
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 5",
+            "D. 10"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong hệ thống có đồ thị cấp phát tài nguyên tạo thành chu trình đơn. Mỗi loại tài nguyên chỉ có một thực thể. Kết luận:",
+        "options": [
+            "A. Không deadlock",
+            "B. Chắc chắn deadlock",
+            "C. Starvation",
+            "D. Livelock"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Deadlock xảy ra khi đồng thời tồn tại bao nhiêu điều kiện Coffman?",
+        "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 5"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Điều kiện \"Hold and Wait\" nghĩa là:",
+        "options": [
+            "A. Giữ tài nguyên và chờ tài nguyên khác",
+            "B. Giải phóng tài nguyên trước khi yêu cầu",
+            "C. Chờ CPU",
+            "D. Chờ I/O"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Điều kiện \"Circular Wait\" nghĩa là:",
+        "options": [
+            "A. Chờ FIFO",
+            "B. Chờ ưu tiên",
+            "C. Chờ vòng tròn giữa các tiến trình",
+            "D. Chờ semaphore"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nếu phá bỏ điều kiện Mutual Exclusion thì:",
+        "options": [
+            "A. Không còn deadlock",
+            "B. Tăng deadlock",
+            "C. Không thay đổi",
+            "D. Tăng starvation"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Có 4 tiến trình và 4 tài nguyên tạo thành vòng P1→R1→P2→R2→P3→R3→P4→R4→P1. Kết luận:",
+        "options": [
+            "A. Starvation",
+            "B. Deadlock",
+            "C. Race condition",
+            "D. Interrupt"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Semaphore S = 10. Sau 7 lần wait(S), giá trị còn lại là:",
+        "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 5"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Buffer 50 ô chứa 35 sản phẩm. Giá trị semaphore empty là:",
+        "options": [
+            "A. 15",
+            "B. 25",
+            "C. 35",
+            "D. 50"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Buffer 50 ô chứa 35 sản phẩm. Producer thêm 5 sản phẩm. Giá trị full mới là:",
+        "options": [
+            "A. 35",
+            "B. 38",
+            "C. 40",
+            "D. 45"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Semaphore S = 1. Thực hiện: wait(S) signal(S) wait(S) Giá trị cuối cùng của S là:",
+        "options": [
+            "A. -1",
+            "B. 0",
+            "C. 1",
+            "D. 2"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một hệ thống có 6 tiến trình cùng truy cập vùng găng được bảo vệ bằng mutex. Tổng số tiến trình tối đa có thể ở vùng găng tại cùng một thời điểm là:",
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 5",
+            "D. 6"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Các dịch vụ của hệ điều hành cung cấp cho người sử dụng KHÔNG bao gồm chức năng nào sau đây?",
+        "options": [
+            "A. Giao diện người dùng (UI)",
+            "B. Thực thi chương trình",
+            "C. Thiết kế mạch phần cứng",
+            "D. Thao tác Nhập/Xuất (I/O)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong các dịch vụ hệ điều hành, việc liên lạc (Communication) giữa các tiến trình có thể được thực hiện thông qua những cơ chế nào?",
+        "options": [
+            "A. Bộ nhớ chia sẻ hoặc truyền thông điệp (Message passing)",
+            "B. Gọi hàm trực tiếp từ phần cứng",
+            "C. Giao diện dòng lệnh (CLI)",
+            "D. Qua giao thức HTTP duy nhất"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Chức năng \"Tính toán\" (Accounting) trong dịch vụ hệ điều hành dùng để làm gì?",
+        "options": [
+            "A. Tính toán các phép toán số học cho người dùng",
+            "B. Theo dõi người dùng sử dụng bao nhiêu và loại tài nguyên nào",
+            "C. Phân bổ bộ nhớ RAM cho ứng dụng",
+            "D. Kiểm tra lỗi phần cứng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Sự khác biệt giữa \"Bảo vệ\" (Protection) và \"Bảo mật\" (Security) trong hệ điều hành là gì?",
+        "options": [
+            "A. Bảo vệ kiểm soát truy cập tài nguyên bên trong, Bảo mật tránh các nguy cơ tấn công từ bên ngoài",
+            "B. Bảo mật dùng cho phần cứng, Bảo vệ dùng cho phần mềm",
+            "C. Bảo vệ là chức năng của người dùng, Bảo mật là của hệ điều hành",
+            "D. Không có sự khác biệt"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Giao diện người dùng CLI là viết tắt của thuật ngữ nào?",
+        "options": [
+            "A. Control-Line Interface",
+            "B. Command-Line Interface",
+            "C. Core-Line Interface",
+            "D. Central-Line Interface"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trên các hệ thống có nhiều bộ dịch lệnh CLI để lựa chọn, các bộ dịch lệnh này được gọi là gì?",
+        "options": [
+            "A. Kernels",
+            "B. APIs",
+            "C. Shells",
+            "D. Daemons"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Giao diện màn hình nền (GUI) được phát minh đầu tiên tại đâu?",
+        "options": [
+            "A. Microsoft",
+            "B. Apple",
+            "C. Viện nghiên cứu Xerox PARC",
+            "D. Đại học MIT"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Hệ điều hành Apple Mac OS X sử dụng giao diện GUI có tên gọi là gì?",
+        "options": [
+            "A. Aero",
+            "B. Aqua",
+            "C. Metro",
+            "D. GNOME"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "UNIX và Linux chủ yếu sử dụng giao diện CLI nhưng có tích hợp thêm giao diện GUI tùy chọn nào sau đây?",
+        "options": [
+            "A. CDE, KDE, GNOME 14 Nguyễn Chí Cường",
+            "B. Aqua, Windows",
+            "C. Bourne Shell, Bash",
+            "D. DirectX, OpenGL"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lời gọi hệ thống (System calls) cung cấp giao diện lập trình cho các dịch vụ của HĐH và thường được viết bằng ngôn ngữ nào?",
+        "options": [
+            "A. Java hoặc Python",
+            "B. C hoặc C++",
+            "C. Assembly hoặc Mã máy",
+            "D. HTML hoặc CSS"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Ứng dụng thường truy cập lời gọi hệ thống thông qua đâu thay vì gọi trực tiếp?",
+        "options": [
+            "A. Giao diện dòng lệnh (CLI)",
+            "B. Trình điều khiển thiết bị (Device Driver)",
+            "C. Giao diện lập trình ứng dụng cấp cao (API)",
+            "D. Bộ nhớ đệm (Cache)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "API nào sau đây KHÔNG nằm trong ba API phổ biến nhất được đề cập trong tài liệu?",
+        "options": [
+            "A. Win32 API",
+            "B. POSIX API",
+            "C. Java API 15 Nguyễn Chí Cường",
+            "D. Android API"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Giao diện lời gọi hệ thống (System-call interface) quản lý các lời gọi hệ thống dựa trên thông tin nào?",
+        "options": [
+            "A. Tên của người dùng",
+            "B. Một bảng chỉ mục theo các con số được gắn với mỗi lời gọi hệ thống",
+            "C. Kích thước của tiến trình",
+            "D. Thời gian tạo tiến trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khi thực hiện lời gọi hệ thống, người lập trình có cần biết chi tiết về cách lời gọi đó được thực thi trong hệ điều hành không?",
+        "options": [
+            "A. Có, phải biết cấu trúc phần cứng",
+            "B. Có, phải tự viết mã hạt nhân (kernel code)",
+            "C. Không, chỉ cần tuân theo API và hiểu HĐH sẽ trả về kết quả gì",
+            "D. Không, vì HĐH không bao giờ trả về kết quả"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Có bao nhiêu phương thức chung được sử dụng để truyền tham số từ ứng dụng tới hệ điều hành trong lời gọi hệ thống?",
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4 16 Nguyễn Chí Cường"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Phương thức truyền tham số đơn giản nhất trong lời gọi hệ thống là gì?",
+        "options": [
+            "A. Truyền qua Stack",
+            "B. Truyền các tham số vào các thanh ghi",
+            "C. Lưu tham số trong một Block/Table trong bộ nhớ",
+            "D. Truyền qua mạng TCP/IP"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hệ điều hành Linux và Solaris thường sử dụng phương thức truyền tham số nào?",
+        "options": [
+            "A. Truyền tham số vào thanh ghi",
+            "B. Lưu tham số trong một khối (block) hoặc bảng (table) trong bộ nhớ",
+            "C. Đẩy (push) tham số vào ngăn xếp (stack)",
+            "D. Truyền tham số bằng file văn bản"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Đặc điểm ưu việt của phương thức truyền tham số bằng Block/Table hoặc Stack so với dùng thanh ghi là gì?",
+        "options": [
+            "A. Tốc độ thực thi luôn nhanh gấp đôi",
+            "B. Không giới hạn số lượng hoặc độ dài của tham số được truyền",
+            "C. Không cần sử dụng bộ nhớ chính",
+            "D. Bảo mật cao hơn trước virus"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lời gọi hệ thống nào sau đây thuộc nhóm \"Điều khiển tiến trình\" (Process Control)?",
+        "options": [
+            "A. Tạo, xóa, mở, đóng tập tin",
+            "B. Tạo tiến trình, kết thúc tiến trình, chờ sự kiện",
+            "C. Nhận và thiết lập thuộc tính thiết bị",
+            "D. Cấp quyền và cấm truy cập"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong hệ điều hành Windows, lời gọi hệ thống để tạo một tiến trình mới là gì?",
+        "options": [
+            "A. fork()",
+            "B. CreateProcess()",
+            "C. newProcess()",
+            "D. StartProcess()"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong hệ điều hành Unix, lời gọi hệ thống nào tương đương với chức năng tạo tiến trình mới?",
+        "options": [
+            "A. CreateProcess()",
+            "B. wait()",
+            "C. fork()",
+            "D. exec()"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Hàm printf() trong thư viện C chuẩn khi chạy ở chế độ người dùng (User mode) sẽ thực hiện lời gọi hệ thống nào ở chế độ nhân (Kernel mode)? 18 Nguyễn Chí Cường",
+        "options": [
+            "A. read()",
+            "B. write()",
+            "C. open()",
+            "D. print()"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "MS-DOS là một ví dụ về loại hệ điều hành nào?",
+        "options": [
+            "A. Hệ điều hành đa nhiệm",
+            "B. Hệ điều hành đơn nhiệm",
+            "C. Hệ điều hành thời gian thực",
+            "D. Hệ điều hành phân tán"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Đặc điểm nào sau đây mô tả đúng quá trình thực thi chương trình trong MS- DOS?",
+        "options": [
+            "A. Tạo nhiều tiến trình chạy song song cùng lúc",
+            "B. Tải chương trình vào bộ nhớ, ghi đè lên tất cả trừ hạt nhân (Kernel)",
+            "C. Phân chia bộ nhớ thành hàng ngàn lớp an toàn",
+            "D. Không cần khởi động Shell"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong hệ điều hành FreeBSD (Unix), sau khi shell tạo tiến trình bằng hàm fork(), nó sử dụng lệnh nào để nạp chương trình vào tiến trình?",
+        "options": [
+            "A. load()",
+            "B. run() 19 Nguyễn Chí Cường",
+            "C. exec()",
+            "D. start()"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trình biên dịch (compiler) và trình gỡ rối (debugger) được phân loại là gì trong hệ thống?",
+        "options": [
+            "A. Lời gọi hệ thống (System calls)",
+            "B. Chương trình ứng dụng (Application programs)",
+            "C. Chương trình hệ thống (System programs) nhóm Ngôn ngữ lập trình",
+            "D. Hệ thống tập tin (File System)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Registry trong một số hệ điều hành là đối tượng được sử dụng để làm gì?",
+        "options": [
+            "A. Lưu trữ mã nguồn mở",
+            "B. Lưu trữ và lấy thông tin cấu hình của hệ thống",
+            "C. Kết nối Internet tự động",
+            "D. Nén các tập tin lớn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Các dịch vụ nền (Daemons) có đặc điểm nào sau đây?",
+        "options": [
+            "A. Chỉ chạy một lần duy nhất lúc cài đặt máy",
+            "B. Chạy trong chế độ hạt nhân (Kernel mode)",
+            "C. Cung cấp tiện ích như in ấn, điều phối tiến trình và chạy trong chế độ người dùng (User mode)",
+            "D. Được coi là một phần cốt lõi của hạt nhân HĐH 20 Nguyễn Chí Cường"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Chương trình ứng dụng (như trình duyệt web, phần mềm soạn thảo) có đặc điểm nào sau đây?",
+        "options": [
+            "A. Là một phần của hệ điều hành",
+            "B. Chạy trong chế độ hạt nhân (Kernel mode)",
+            "C. Do người dùng khởi động và không được coi là một phần của hệ điều hành",
+            "D. Luôn chạy tự động khi bật máy tính"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong thiết kế hệ điều hành, \"Hệ điều hành nên thuận tiện sử dụng, dễ học, an toàn, nhanh chóng\" thuộc về mục tiêu nào?",
+        "options": [
+            "A. System goals (Mục tiêu hệ thống)",
+            "B. User goals (Mục tiêu người dùng)",
+            "C. Hardware goals (Mục tiêu phần cứng)",
+            "D. Network goals (Mục tiêu mạng)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khái niệm \"Chính sách\" (Policy) trong nguyên lý thiết kế hệ điều hành trả lời cho câu hỏi nào?",
+        "options": [
+            "A. Sẽ làm những gì? (WHAT)",
+            "B. Làm chúng như thế nào? (HOW)",
+            "C. Khi nào sẽ làm? (WHEN)",
+            "D. Ai sẽ làm? (WHO)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Khái niệm \"Cơ chế\" (Mechanism) trong nguyên lý thiết kế HĐH nhằm xác định điều gì?",
+        "options": [
+            "A. Sẽ làm những gì?",
+            "B. Làm chúng như thế nào? (Xác định cách thức thực hiện)",
+            "C. Phân quyền cho ai?",
+            "D. Khi nào bảo trì?"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tách rời chính sách (Policy) khỏi cơ chế (Mechanism) mang lại lợi ích gì?",
+        "options": [
+            "A. Tăng dung lượng bộ nhớ",
+            "B. Giảm bớt số lượng ngôn ngữ lập trình",
+            "C. Cho phép linh hoạt tối đa nếu các quyết định chính sách bị thay đổi",
+            "D. Buộc hệ điều hành phải chạy chậm lại"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Phần thân chính của các hệ điều hành hiện nay thường được viết bằng ngôn ngữ nào?",
+        "options": [
+            "A. Assembly thuần túy",
+            "B. C, C++",
+            "C. Java, C#",
+            "D. HTML, Javascript"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Emulator (Trình giả lập) trong hệ điều hành có tác dụng gì? 22 Nguyễn Chí Cường",
+        "options": [
+            "A. Diệt virus hệ thống",
+            "B. Cho phép HĐH chạy trên phần cứng non-native (phần cứng không phải bản địa)",
+            "C. Tăng tốc độ truy xuất ổ cứng",
+            "D. Giảm nhiệt độ của CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "MS-DOS được thiết kế theo cấu trúc hệ điều hành nào?",
+        "options": [
+            "A. Cấu trúc Microkernel",
+            "B. Cấu trúc đơn giản (chưa phân cấp rõ ràng)",
+            "C. Cấu trúc Module hóa",
+            "D. Cấu trúc phân lớp hoàn toàn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hệ điều hành UNIX gốc có cấu trúc bao gồm 2 phần riêng biệt là gì?",
+        "options": [
+            "A. Shell và GUI",
+            "B. RAM và ROM",
+            "C. Chương trình hệ thống và Nhân (Kernel)",
+            "D. Microkernel và Module"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong phương pháp tiếp cận phân lớp (Layered approach) của hệ điều hành, lớp dưới cùng (Layer 0) là gì?",
+        "options": [
+            "A. Giao diện người dùng",
+            "B. Ứng dụng",
+            "C. Phần cứng 23 Nguyễn Chí Cường",
+            "D. Lời gọi hệ thống"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong cấu trúc phân lớp HĐH, nguyên tắc hoạt động giữa các lớp là gì?",
+        "options": [
+            "A. Lớp trên có quyền truy cập trực tiếp vào phần cứng",
+            "B. Mọi lớp đều gọi lẫn nhau tự do",
+            "C. Mỗi lớp chỉ sử dụng các dịch vụ và chức năng của lớp thấp hơn",
+            "D. Lớp thấp hơn sử dụng dịch vụ của lớp cao hơn"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Hệ điều hành Mach là ví dụ tiêu biểu cho cấu trúc hệ điều hành nào?",
+        "options": [
+            "A. Monolithic (Nguyên khối)",
+            "B. Cấu trúc Microkernel",
+            "C. Cấu trúc đơn giản",
+            "D. Cấu trúc mạng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lợi ích của cấu trúc Microkernel là gì?",
+        "options": [
+            "A. Chạy các ứng dụng MS-DOS",
+            "B. Gộp chung tất cả các dịch vụ vào nhân để tăng tốc độ tối đa",
+            "C. Dễ dàng mở rộng, đáng tin cậy hơn, an toàn hơn do ít mã lệnh chạy trong kernel mode",
+            "D. Cho phép người dùng chỉnh sửa phần cứng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Hạn chế lớn nhất của cấu trúc Microkernel là gì? 24 Nguyễn Chí Cường",
+        "options": [
+            "A. Quá trình liên lạc (message passing) từ chế độ người dùng sang chế độ nhân làm tốn hiệu suất cao",
+            "B. Không hỗ trợ mạng",
+            "C. Rất khó để lập trình",
+            "D. Chỉ chạy được trên máy Mac"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Cấu trúc Module của hệ điều hành sử dụng cách tiếp cận lập trình nào?",
+        "options": [
+            "A. Tiếp cận tuần tự",
+            "B. Tiếp cận hướng đối tượng",
+            "C. Tiếp cận kịch bản (Scripting)",
+            "D. Tiếp cận đệ quy"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hệ điều hành Solaris của Sun Microsystems (cũ) được thiết kế theo cấu trúc nào?",
+        "options": [
+            "A. Đơn giản giống DOS",
+            "B. Module hóa hạt nhân",
+            "C. Phân lớp thuần túy",
+            "D. Microkernel thuần túy"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Các hệ điều hành hiện đại như Windows, Linux, Mac OS X thường sử dụng mô hình cấu trúc nào?",
+        "options": [
+            "A. Mô hình lai (Hybrid - kết hợp nhiều hướng tiếp cận)",
+            "B. Mô hình đơn giản 25 Nguyễn Chí Cường",
+            "C. Mô hình phân lớp thuần túy",
+            "D. Mô hình Microkernel nguyên bản"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Apple Mac OS X là một hệ thống lai bao gồm những thành phần môi trường nào?",
+        "options": [
+            "A. Windows API và MS-DOS",
+            "B. Giao diện người dùng Aqua, môi trường lập trình Cocoa và Kernel Mach/BSD",
+            "C. Kernel Linux và GUI KDE",
+            "D. Dalvik Virtual Machine"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hệ điều hành di động iOS sử dụng API nào để phát triển các ứng dụng?",
+        "options": [
+            "A. Java API",
+            "B. POSIX",
+            "C. Cocoa Touch (Objective-C API)",
+            "D. Win32"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Hệ điều hành Android dựa trên nhân (kernel) của hệ điều hành nào?",
+        "options": [
+            "A. Unix",
+            "B. Mac OS X",
+            "C. Linux",
+            "D. Windows CE"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Môi trường thời gian chạy (Runtime Environment) của hệ điều hành Android bao gồm bộ thư viện lõi và thành phần nào?",
+        "options": [
+            "A. Trình giả lập DOS",
+            "B. Máy ảo Dalvik (Dalvik virtual machine)",
+            "C. Trình biên dịch C++",
+            "D. Môi trường Aqua"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Ứng dụng trên nền tảng Android chủ yếu được phát triển bằng ngôn ngữ lập trình nào cộng với API của Android?",
+        "options": [
+            "A. C#",
+            "B. Swift",
+            "C. Java",
+            "D. Python"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Sự khác biệt cơ bản giữa chương trình và tiến trình là gì?",
+        "options": [
+            "A. Chương trình chạy trên RAM, tiến trình lưu trên đĩa cứng",
+            "B. Chương trình là thực thể thụ động, tiến trình là thực thể hoạt động",
+            "C. Tiến trình chứa mã nguồn chưa biên dịch, chương trình chứa mã máy",
+            "D. Không có sự khác biệt nào"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một tiến trình bao gồm những thành phần nào trong bộ nhớ? 27 Nguyễn Chí Cường",
+        "options": [
+            "A. Text, Data, Heap, Stack",
+            "B. Text, Thread, Network, RAM",
+            "C. Program, Hardware, Memory, Disk",
+            "D. Heap, Cache, Registers, ALU"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong cấu trúc bộ nhớ của tiến trình, ngăn xếp (Stack) dùng để làm gì?",
+        "options": [
+            "A. Lưu trữ mã chương trình",
+            "B. Chứa bộ nhớ cấp phát động",
+            "C. Chứa biến toàn cục",
+            "D. Chứa dữ liệu tạm (tham số, địa chỉ, biến cục bộ)"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Phần Khối xếp (Heap) của tiến trình có chức năng gì?",
+        "options": [
+            "A. Lưu trữ bộ đếm chương trình",
+            "B. Chứa bộ nhớ cấp phát động trong suốt thời gian chạy",
+            "C. Chứa dữ liệu tĩnh",
+            "D. Chứa thông tin đăng nhập của người dùng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khi tiến trình đang chờ một số sự kiện xảy ra (như hoàn thành Nhập/Xuất), nó ở trạng thái nào?",
+        "options": [
+            "A. Ready",
+            "B. Running",
+            "C. Waiting 28 Nguyễn Chí Cường",
+            "D. New"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trạng thái Ready (Sẵn sàng) của tiến trình có nghĩa là gì?",
+        "options": [
+            "A. Tiến trình đang chờ nhận bộ xử lý (CPU)",
+            "B. Tập lệnh của tiến trình đang được thực thi",
+            "C. Tiến trình đang được tạo ra",
+            "D. Tiến trình đã hoàn thành việc thực thi"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Khối điều khiển tiến trình (PCB - Process Control Block) KHÔNG chứa thông tin nào sau đây?",
+        "options": [
+            "A. Bộ đếm chương trình",
+            "B. Thông tin quản lý bộ nhớ",
+            "C. Thông định thời CPU",
+            "D. Dữ liệu bộ nhớ đệm (Cache) của các thiết bị I/O của máy tính khác"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Thông tin định thời CPU trong PCB bao gồm những gì?",
+        "options": [
+            "A. Số lượng tiến trình con",
+            "B. Độ ưu tiên, con trỏ hàng đợi",
+            "C. Giới hạn thời gian dùng RAM",
+            "D. Danh sách các tập tin đang mở"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hệ điều hành Linux biểu diễn tiến trình bằng cấu trúc ngôn ngữ C nào?",
+        "options": [
+            "A. process_struct",
+            "B. task_struct",
+            "C. pcb_struct",
+            "D. thread_struct"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tập hợp tất cả các tiến trình đang có trong hệ thống được gọi là hàng đợi nào?",
+        "options": [
+            "A. Ready queue",
+            "B. Device queue",
+            "C. Job queue",
+            "D. Wait queue"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Ready queue (hàng đợi sẵn sàng) chứa các tiến trình như thế nào?",
+        "options": [
+            "A. Đang nằm trên đĩa từ chờ được nạp",
+            "B. Đang ở trong bộ nhớ chính, sẵn sàng và chờ thực thi",
+            "C. Đang chờ một thiết bị I/O",
+            "D. Vừa mới hoàn thành thực thi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nhiệm vụ của Bộ định thời ngắn hạn (Short-term Scheduler) là gì?",
+        "options": [
+            "A. Chọn tiến trình được đưa vào ready queue",
+            "B. Chọn tiến trình sẽ được thực thi tiếp theo và cấp phát CPU",
+            "C. Đưa tiến trình từ đĩa vào bộ nhớ 30 Nguyễn Chí Cường",
+            "D. Kiểm soát mức độ đa chương"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Đặc điểm của Bộ định thời dài hạn (Long-term Scheduler) là gì?",
+        "options": [
+            "A. Được gọi thường xuyên mỗi mili giây",
+            "B. Thực hiện hoán đổi (swapping) tiến trình",
+            "C. Chọn tiến trình đưa vào ready queue và kiểm soát mức độ đa chương",
+            "D. Phân bổ phần cứng thiết bị I/O"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tiến trình thiên hướng xử lý (CPU-bound process) có đặc điểm gì?",
+        "options": [
+            "A. Tốn nhiều thời gian cho Nhập/Xuất",
+            "B. Có nhiều phiên sử dụng CPU ngắn",
+            "C. Tốn nhiều thời gian cho việc tính toán, có vài phiên sử dụng CPU dài",
+            "D. Không bao giờ vào trạng thái Waiting"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Chức năng của Bộ định thời trung hạn (Medium-term Scheduler) là gì?",
+        "options": [
+            "A. Di chuyển tiến trình từ bộ nhớ ra đĩa và ngược lại (swapping) để giảm mức độ đa chương",
+            "B. Gấp rút cấp phát CPU",
+            "C. Quản lý hệ thống file",
+            "D. Tính toán thời gian phản hồi mạng"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Khi CPU chuyển sang một tiến trình khác, hệ thống thực hiện thao tác lưu trạng thái tiến trình cũ và tải trạng thái tiến trình mới. Quá trình này gọi là gì?",
+        "options": [
+            "A. Cấp phát động (Dynamic Allocation)",
+            "B. Chuyển ngữ cảnh (Context switch)",
+            "C. Phân đoạn bộ nhớ (Segmentation)",
+            "D. Đa luồng (Multithreading)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong quá trình chuyển ngữ cảnh (context switch), hệ thống có thực hiện công việc hữu ích nào cho các ứng dụng không?",
+        "options": [
+            "A. Có, nó tự động dọn rác bộ nhớ",
+            "B. Có, nó tải trước dữ liệu mạng",
+            "C. Không, hệ thống không có công việc hữu ích trong khi chuyển",
+            "D. Có, nó thực hiện sao lưu đĩa"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Yếu tố nào giúp làm giảm thời gian chuyển ngữ cảnh ở mức phần cứng?",
+        "options": [
+            "A. CPU có tốc độ xung nhịp cực lớn",
+            "B. Hỗ trợ nhiều tập thanh ghi (registers) trên CPU để tải nhiều ngữ cảnh cùng lúc",
+            "C. Ổ cứng SSD tốc độ cao",
+            "D. Dung lượng RAM cực lớn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Mỗi tiến trình được hệ điều hành xác định và quản lý thông qua mã nào?",
+        "options": [
+            "A. Mã định danh người dùng (UID) 32 Nguyễn Chí Cường",
+            "B. Mã định danh tiến trình (PID - process identifier)",
+            "C. Số hiệu cổng (Port)",
+            "D. Địa chỉ MAC"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong hệ điều hành UNIX, lời gọi hệ thống nào được sử dụng để tạo một tiến trình con mới?",
+        "options": [
+            "A. CreateProcess()",
+            "B. exec()",
+            "C. fork()",
+            "D. new()"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Sau lời gọi fork() trong UNIX, lời gọi hệ thống exec() thường được dùng để làm gì?",
+        "options": [
+            "A. Hủy tiến trình",
+            "B. Chờ tiến trình con kết thúc",
+            "C. Thay thế không gian bộ nhớ của tiến trình bằng một chương trình mới",
+            "D. Trả về mã PID của tiến trình cha"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Windows API sử dụng hàm nào để tạo một tiến trình mới?",
+        "options": [
+            "A. fork()",
+            "B. CreateProcess()",
+            "C. spawn() 33 Nguyễn Chí Cường",
+            "D. StartThread()"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tiến trình thực thi câu lệnh cuối cùng và yêu cầu HĐH xóa nó bằng lời gọi hệ thống nào?",
+        "options": [
+            "A. abort()",
+            "B. terminate()",
+            "C. exit()",
+            "D. kill()"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tiến trình cha kết thúc tiến trình con bằng lời gọi abort() khi nào?",
+        "options": [
+            "A. Tiến trình con sử dụng vượt mức tài nguyên cấp phát",
+            "B. Tác vụ giao cho con không còn cần thiết",
+            "C. Tiến trình cha kết thúc và HĐH không cho phép tiến trình con tiếp tục",
+            "D. Tất cả các lý do trên"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "\"Kết thúc theo tầng\" (Cascading termination) có nghĩa là gì?",
+        "options": [
+            "A. CPU kết thúc từng tiến trình theo độ ưu tiên",
+            "B. Nếu tiến trình cha kết thúc, mọi tiến trình con, cháu của nó cũng phải kết thúc",
+            "C. Đóng các tập tin theo thứ tự từ trên xuống",
+            "D. Tắt từng thiết bị I/O"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tiến trình Zombie là loại tiến trình như thế nào?",
+        "options": [
+            "A. Tiến trình đã kết thúc nhưng tiến trình cha của nó chưa gọi lời gọi wait()",
+            "B. Tiến trình đang giữ tài nguyên của hệ thống mà không nhả ra",
+            "C. Tiến trình đang lây nhiễm virus",
+            "D. Tiến trình cha kết thúc mà không gọi wait()"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Tiến trình Orphan (mồ côi) xuất hiện khi nào?",
+        "options": [
+            "A. Tiến trình con kết thúc trước tiến trình cha",
+            "B. Tiến trình cha kết thúc mà không gọi wait()",
+            "C. Cả hai tiến trình đều chạy vô hạn",
+            "D. Bộ nhớ bị đầy"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trình duyệt web Google Chrome hoạt động dựa trên kiến trúc nào?",
+        "options": [
+            "A. Đơn tiến trình",
+            "B. Đa tiến trình (Multi-process)",
+            "C. Chỉ sử dụng 1 luồng duy nhất (Single-thread)",
+            "D. Dựa vào BIOS"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong kiến trúc đa tiến trình của Chrome, tiến trình Renderer có nhiệm vụ gì?",
+        "options": [
+            "A. Quản lý giao diện đĩa và nhập/xuất",
+            "B. Quản lý plug-in",
+            "C. Trình diễn trang web, xử lý HTML, Javascript 35 Nguyễn Chí Cường",
+            "D. Tải xuống file cài đặt"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tại sao các tiến trình lại cần cộng tác với nhau?",
+        "options": [
+            "A. Để chiếm dụng nhiều RAM hơn",
+            "B. Tránh bị diệt bởi HĐH",
+            "C. Chia sẻ thông tin, tăng tốc độ tính toán, đơn thể hóa, tạo sự thuận tiện",
+            "D. Để bỏ qua bộ định thời CPU"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Có 2 mô hình Truyền thông liên tiến trình (IPC) cơ bản là gì?",
+        "options": [
+            "A. Semaphore và Mutex",
+            "B. Bộ nhớ chia sẻ (Shared memory) và Trao đổi thông điệp (Message passing)",
+            "C. TCP/IP và UDP",
+            "D. RAM và ROM"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Bài toán Producer-Consumer theo kiểu Vùng đệm giới hạn (Bounded-buffer) có đặc điểm gì?",
+        "options": [
+            "A. Kích thước vùng đệm được gán cố định",
+            "B. Không giới hạn kích thước vùng đệm",
+            "C. Chỉ có 1 phần tử duy nhất",
+            "D. Dữ liệu không bao giờ bị tràn"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Code/Logic) Trong giải pháp bộ nhớ chia sẻ Bounded-buffer với kích thước BUFFER_SIZE, câu lệnh kiểm tra vùng đệm ĐẦY là gì?",
+        "options": [
+            "A. in == out",
+            "B. in == BUFFER_SIZE",
+            "C. ((in + 1) % BUFFER_SIZE) == out",
+            "D. (out + 1) == in"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Code/Logic) Trong Bounded-buffer, điều kiện để Consumer kiểm tra vùng đệm RỖNG là gì?",
+        "options": [
+            "A. ((in + 1) % BUFFER_SIZE) == out",
+            "B. in == out",
+            "C. in == 0",
+            "D. out == BUFFER_SIZE"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hạn chế của giải pháp Bounded-buffer sử dụng công thức (in + 1) % BUFFER_SIZE là gì?",
+        "options": [
+            "A. Mất nhiều thời gian tính toán",
+            "B. Gây treo máy tính",
+            "C. Chỉ có thể sử dụng tối đa (BUFFER_SIZE - 1) phần tử cùng lúc",
+            "D. Phải cấp quyền quản trị viên"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Cơ chế IPC \"Trao đổi thông điệp\" (Message Passing) cung cấp 2 hoạt động chính nào? 37 Nguyễn Chí Cường",
+        "options": [
+            "A. Read và Write",
+            "B. Send(message) và Receive(message)",
+            "C. Load và Store",
+            "D. Push và Pop"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong truyền thông trực tiếp, lệnh Send(P, message) có nghĩa là gì?",
+        "options": [
+            "A. Gửi thông báo lỗi",
+            "B. Phát broadcast lên toàn mạng",
+            "C. Gửi thông điệp tới tiến trình P",
+            "D. P gửi thông điệp cho hệ thống"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Truyền thông gián tiếp (Indirect communication) sử dụng thành phần trung gian nào để gửi/nhận thông điệp?",
+        "options": [
+            "A. Thanh ghi (Registers)",
+            "B. Bộ nhớ ảo (Virtual Memory)",
+            "C. Hộp thư (Mailboxes / Ports)",
+            "D. Cáp mạng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thuộc tính liên kết của Truyền thông gián tiếp có đặc điểm gì?",
+        "options": [
+            "A. Giữa hai tiến trình chỉ có tối đa 1 liên kết",
+            "B. Một liên kết có thể được gắn với nhiều tiến trình",
+            "C. Không cho phép gửi hai chiều 38 Nguyễn Chí Cường",
+            "D. Không cần thiết lập liên kết"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu 3 tiến trình P1, P2, P3 chia sẻ hộp thư chung, khi P1 gửi thông điệp, hệ thống giải quyết việc ai là người nhận bằng cách nào?",
+        "options": [
+            "A. Gửi cho tất cả cùng lúc",
+            "B. Chỉ cho phép liên kết gắn đúng 2 tiến trình, hoặc cho phép 1 tiến trình nhận tại 1 thời điểm, hoặc chọn ngẫu nhiên",
+            "C. Xóa thông điệp nếu có hơn 1 người nhận",
+            "D. Yêu cầu P1 chia nhỏ gói tin"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khái niệm \"Blocking send\" trong đồng bộ hóa thông điệp có nghĩa là gì?",
+        "options": [
+            "A. Tiến trình gửi chạy vô hạn",
+            "B. Tiến trình gửi bị khóa (chờ) cho đến khi thông điệp của nó được nhận",
+            "C. Khóa hệ điều hành để gửi tin",
+            "D. Gửi liên tục không cần biết đầu nhận"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "\"Non-blocking receive\" (nhận không đồng bộ) xảy ra như thế nào?",
+        "options": [
+            "A. Tiến trình nhận bị treo máy",
+            "B. Tiến trình nhận bị khóa tới khi có thông điệp",
+            "C. Tiến trình nhận một thông điệp hợp lệ hoặc một thông điệp rỗng (null) và tiếp tục thực thi ngay",
+            "D. Bỏ qua tất cả thông điệp 39 Nguyễn Chí Cường"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khi hàng đợi thông điệp có cấu hình \"Zero capacity\" (không có vùng đệm), điều gì sẽ xảy ra?",
+        "options": [
+            "A. Thông điệp bị xóa ngay lập tức",
+            "B. Tiến trình gửi luôn bị khóa, phải chờ cho đến khi tiến trình nhận sẵn sàng nhận (rendezvous)",
+            "C. Gửi không bao giờ phải chờ",
+            "D. Chỉ cho phép thông điệp dung lượng 0 byte"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hàng đợi thông điệp \"Unbounded capacity\" (không giới hạn độ dài) mang lại ưu điểm gì cho tiến trình gửi?",
+        "options": [
+            "A. Tiến trình gửi không bao giờ phải chờ (không bị khóa)",
+            "B. Đảm bảo bảo mật 100%",
+            "C. Chỉ tốn 1 byte RAM",
+            "D. Bắt buộc người nhận phải đọc ngay"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Mô hình) Trong mô hình 7 trạng thái của tiến trình, trạng thái nào được bổ sung so với mô hình 5 trạng thái?",
+        "options": [
+            "A. New, Terminated",
+            "B. Ready, Waiting",
+            "C. Suspended ready, Suspended blocked",
+            "D. Running, Blocked"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Mô hình) Trong mô hình 7 trạng thái, một tiến trình chuyển từ Running (Đang chạy) sang Suspended ready (Sẵn sàng bị treo) khi nào?",
+        "options": [
+            "A. Khi có lỗi phần cứng",
+            "B. Thời gian cấp phát CPU đã hết nhưng bộ nhớ KHÔNG CÒN chỗ trống, HĐH phải đẩy tiến trình ra",
+            "C. Khi người dùng nhấn nút Tắt máy",
+            "D. Khi nó chờ thiết bị I/O"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Mô hình) Khi một tiến trình đang ở trạng thái Blocked (Khóa/Đợi sự kiện) và bộ nhớ chính bị đầy, HĐH sẽ chuyển nó sang trạng thái nào để giải phóng RAM?",
+        "options": [
+            "A. Terminated (Kết thúc)",
+            "B. Running (Đang chạy)",
+            "C. Suspended blocked (Bị treo ở trạng thái khóa)",
+            "D. Ready (Sẵn sàng)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Mô hình) Khi sự kiện Nhập/Xuất mà tiến trình đang đợi đã xuất hiện, nhưng tiến trình đang nằm ngoài đĩa ở trạng thái \"Suspended blocked\", nó sẽ chuyển sang trạng thái nào tiếp theo?",
+        "options": [
+            "A. Suspended ready",
+            "B. Blocked",
+            "C. Running",
+            "D. Terminated 41 Nguyễn Chí Cường"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lời gọi hệ thống wait(&status) của tiến trình cha thực hiện tác vụ gì?",
+        "options": [
+            "A. Buộc hệ thống tạm dừng toàn bộ CPU",
+            "B. Khởi động lại hệ điều hành",
+            "C. Chờ tiến trình con kết thúc, trả về trạng thái thông tin và mã PID của tiến trình con đã kết thúc",
+            "D. Hủy ngay lập tức tiến trình con"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nhược điểm của việc có quá nhiều luồng (threads/processes) chạy đồng thời mà thiết kế HĐH và PCB phức tạp là gì?",
+        "options": [
+            "A. Làm CPU bị hỏng vật lý",
+            "B. Không thể sử dụng bàn phím",
+            "C. Tốn chi phí quản lý rất lớn do thời gian chuyển ngữ cảnh (context switch) diễn ra lâu",
+            "D. Gây ra hiện tượng cháy RAM"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tiểu trình (Thread) được định nghĩa là gì?",
+        "options": [
+            "A. Một hệ quản trị cơ sở dữ liệu",
+            "B. Đơn vị cơ bản sử dụng CPU (còn gọi là tiến trình nhỏ - lightweight process)",
+            "C. Một bộ nhớ đệm ẩn trong nhân",
+            "D. Một loại bẫy lỗi phần cứng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một tiểu trình bao gồm những thành phần cơ bản nào?",
+        "options": [
+            "A. Mã định danh ID, Bộ đếm chương trình (PC), Tập thanh ghi, Ngăn xếp",
+            "B. Bộ nhớ ảo, Card mạng, Ổ cứng",
+            "C. Cấu trúc thư mục, Bảng trang, Con trỏ tập tin",
+            "D. Ngăn xếp, Hàng đợi, Cây nhị phân"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Đâu KHÔNG phải là một lợi ích của việc sử dụng đa tiểu trình so với đa tiến trình?",
+        "options": [
+            "A. Tính kinh tế cao hơn do chi phí chuyển ngữ cảnh thấp hơn",
+            "B. Khả năng chia sẻ tài nguyên dễ dàng hơn",
+            "C. Đảm bảo bảo mật tuyệt đối cho mọi dữ liệu người dùng",
+            "D. Khả năng đáp ứng tốt hơn, đặc biệt với giao diện người dùng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lợi ích \"Tính kinh tế\" của tiểu trình thể hiện ở điểm nào?",
+        "options": [
+            "A. Tốn ít điện năng của CPU hơn",
+            "B. Ít tốn kém hơn so với việc tạo tiến trình, chi phí chuyển ngữ cảnh của tiểu trình thấp hơn chuyển ngữ cảnh của tiến trình",
+            "C. Không cần sử dụng RAM",
+            "D. Tự động nén dữ liệu truyền qua mạng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong lập trình đa lõi, thách thức nào sau đây đòi hỏi lập trình viên phải giải quyết? 43 Nguyễn Chí Cường",
+        "options": [
+            "A. Cập nhật driver màn hình",
+            "B. Chia nhỏ hoạt động, Cân bằng, Tách dữ liệu, Phụ thuộc dữ liệu, Kiểm tra và gỡ lỗi",
+            "C. Quản lý điện năng tiêu thụ của lõi CPU",
+            "D. Thiết kế giao diện đồ họa"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "\"Song song dữ liệu\" (Data parallelism) được hiểu là:",
+        "options": [
+            "A. Phân phối các tiểu trình đến các lõi, mỗi tiểu trình làm 1 thao tác duy nhất",
+            "B. Sử dụng một dữ liệu chung cho tất cả các tiến trình",
+            "C. Phân tán các tập con của dữ liệu ban đầu đến nhiều lõi, các thao tác thực hiện tương tự trên mỗi lõi",
+            "D. Lưu dữ liệu song song ra 2 đĩa cứng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khái niệm \"Song song tác vụ\" (Task parallelism) có nghĩa là gì?",
+        "options": [
+            "A. Chạy cùng lúc một chương trình trên nhiều máy tính",
+            "B. Phân phối các tiểu trình đến các lõi, mỗi tiểu trình thực hiện thao tác duy nhất",
+            "C. Cùng một tác vụ thực hiện trên nhiều dữ liệu khác nhau",
+            "D. Phân tán các tập con của dữ liệu đến nhiều lõi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trên hệ thống đơn lõi (single-core system), bộ định thời cung cấp hình thức xử lý nào?",
+        "options": [
+            "A. Xử lý song song tuyệt đối",
+            "B. Xử lý phân tán 44 Nguyễn Chí Cường",
+            "C. Xử lý đồng thời (Concurrency)",
+            "D. Gom cụm đối xứng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tiểu trình người dùng (User threads) được quản lý bởi thành phần nào?",
+        "options": [
+            "A. Quản lý trực tiếp bởi Phần cứng CPU",
+            "B. Quản lý bởi Thư viện tiểu trình ở mức người dùng",
+            "C. Quản lý bởi hệ thống tệp tin của Kernel",
+            "D. Quản lý bởi bộ điều khiển mạng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tiểu trình nhân (Kernel threads) có đặc điểm gì?",
+        "options": [
+            "A. Chỉ chạy trên hệ điều hành MS-DOS",
+            "B. Được hỗ trợ và quản lý trực tiếp bởi Hệ điều hành",
+            "C. Không tốn chi phí hệ thống",
+            "D. Không cần mã định danh ID"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Ba thư viện tiểu trình chính phổ biến nhất hiện nay là gì?",
+        "options": [
+            "A. POSIX Pthreads, Windows threads, Java threads",
+            "B. C++ threads, Python threads, Ruby threads",
+            "C. Linux threads, Mac threads, Android threads",
+            "D. UNIX API, Win32 API, OpenGL API"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Đặc điểm của mô hình Many-to-One là gì?",
+        "options": [
+            "A. Mỗi tiểu trình người dùng ánh xạ đến một tiểu trình mức nhân",
+            "B. Nhiều tiểu trình ở mức người dùng được ánh xạ đến tiểu trình nhân duy nhất",
+            "C. Cho phép hệ điều hành tự tạo lượng tiểu trình nhân theo ý muốn",
+            "D. Tự động hỗ trợ chạy song song trên đa lõi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hạn chế lớn nhất của mô hình đa tiểu trình Many-to-One là gì?",
+        "options": [
+            "A. Mã nguồn quá phức tạp",
+            "B. Không thể tạo quá 2 tiểu trình",
+            "C. Một tiểu trình bị khóa thì tất cả các tiểu trình cũng bị khóa, và không chạy song song được trên hệ thống đa lõi",
+            "D. Cần quá nhiều RAM"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Solaris Green Threads và GNU Portable Threads là ví dụ của mô hình nào?",
+        "options": [
+            "A. One-to-One",
+            "B. Many-to-Many",
+            "C. Mô hình 2 mức (Two-level)",
+            "D. Many-to-One"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Đặc điểm của mô hình One-to-One là gì?",
+        "options": [
+            "A. Nhiều tiểu trình người dùng dùng chung 1 tiểu trình nhân 46 Nguyễn Chí Cường",
+            "B. Mỗi tiểu trình mức người dùng ánh xạ đến một tiểu trình mức nhân (việc tạo 1 tiểu trình người dùng sẽ tạo 1 tiểu trình nhân)",
+            "C. Không cần tiểu trình nhân",
+            "D. Hạn chế hoàn toàn khả năng chạy đồng thời"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Ưu điểm của mô hình One-to-One so với Many-to-One là gì?",
+        "options": [
+            "A. Thực thi đồng thời nhiều hơn",
+            "B. Tiết kiệm bộ nhớ tuyệt đối",
+            "C. Không bao giờ xảy ra lỗi",
+            "D. Giảm số lượng nhân HĐH"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Tại sao mô hình One-to-One đôi khi bị hạn chế số lượng tiểu trình trên tiến trình?",
+        "options": [
+            "A. Vì HĐH không đủ mã định danh",
+            "B. Vì chi phí tính toán (cost) khi phải tạo tiểu trình nhân tương ứng",
+            "C. Vì lỗi bộ dịch mã",
+            "D. Vì không hỗ trợ trên Windows"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hệ điều hành Windows và Linux sử dụng mô hình đa tiểu trình nào?",
+        "options": [
+            "A. Many-to-One",
+            "B. Many-to-Many",
+            "C. One-to-One 47 Nguyễn Chí Cường",
+            "D. Mô hình 2 mức"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Mô hình Many-to-Many hoạt động theo nguyên tắc nào?",
+        "options": [
+            "A. Cho phép nhiều tiểu trình mức người dùng được ánh xạ đến nhiều tiểu trình mức nhân",
+            "B. 1 tiểu trình người dùng ánh xạ tới 1 tiểu trình nhân",
+            "C. Chỉ có 1 tiểu trình nhân xử lý toàn bộ tiểu trình người dùng",
+            "D. Hệ thống chỉ cho phép tạo đúng 2 tiểu trình"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Hệ thống Windows sử dụng gói ThreadFiber sẽ hỗ trợ mô hình đa tiểu trình nào?",
+        "options": [
+            "A. Many-to-One",
+            "B. One-to-One",
+            "C. Many-to-Many",
+            "D. Two-level"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thư viện Pthreads (POSIX threads) được định nghĩa như thế nào?",
+        "options": [
+            "A. Là một bản thực thi cụ thể bắt buộc trên mọi phần cứng",
+            "B. Là một bản liệt kê (specification) các hoạt động của tiểu trình, không phải là sự thực thi",
+            "C. Là ngôn ngữ lập trình độc lập",
+            "D. Là phần mềm ứng dụng giao diện đồ họa"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thư viện Pthreads rất phổ biến ở các hệ điều hành nào?",
+        "options": [
+            "A. MS-DOS và Windows 95",
+            "B. Windows XP và Windows 7",
+            "C. UNIX (Solaris, Linux, Mac OS X)",
+            "D. Android và iOS thuần"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Code) Trong API Pthreads (C), hàm nào được sử dụng để tạo một tiểu trình mới?",
+        "options": [
+            "A. CreateThread()",
+            "B. pthread_create()",
+            "C. newThread()",
+            "D. start_thread()"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Code) Trong API Pthreads (C), hàm nào được dùng để tiến trình cha \"chờ\" tiểu trình con kết thúc? 49 Nguyễn Chí Cường",
+        "options": [
+            "A. pthread_wait()",
+            "B. pthread_exit()",
+            "C. pthread_join()",
+            "D. WaitForSingleObject()"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Code) Khi tiểu trình con hoàn thành công việc của mình trong Pthreads, nó sử dụng lệnh nào để thoát?",
+        "options": [
+            "A. pthread_exit(0);",
+            "B. exit();",
+            "C. return null;",
+            "D. CloseHandle();"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Code) API của hệ điều hành Windows sử dụng hàm nào để tạo một tiểu trình?",
+        "options": [
+            "A. pthread_create()",
+            "B. CreateThread()",
+            "C. WinThread()",
+            "D. Fork()"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Code) Trong lập trình Windows Threads, hàm WaitForSingleObject() có chức năng gì?",
+        "options": [
+            "A. Tạo một đối tượng (object) mới 50 Nguyễn Chí Cường",
+            "B. Đợi một tiểu trình hoàn thành (finish)",
+            "C. Khóa thiết bị ngoại vi",
+            "D. Đóng một tiểu trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thư viện tiểu trình Java (Java Threads) thường được thực thi (implement) dựa trên cơ sở nào?",
+        "options": [
+            "A. Viết hoàn toàn bằng mã Assembly",
+            "B. Sử dụng mô hình tiểu trình được cung cấp bởi hệ điều hành gốc bên dưới",
+            "C. Chạy trên một phần cứng chuyên dụng riêng",
+            "D. Dựa trên giao thức TCP/IP"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Code) Lớp tiểu trình trong Java có thể được tạo bằng cách thực thi (implements) Interface nào sau đây?",
+        "options": [
+            "A. ThreadInterface",
+            "B. Executable",
+            "C. Runnable",
+            "D. Callable"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Code) Trong Java, phương thức nào của đối tượng Thread được gọi để bắt đầu thực thi tiểu trình?",
+        "options": [
+            "A. run()",
+            "B. start() 51 Nguyễn Chí Cường",
+            "C. init()",
+            "D. execute()"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khái niệm \"Tiểu trình ẩn\" (Implicit threading) nhằm giải quyết vấn đề gì?",
+        "options": [
+            "A. Chống virus lây nhiễm vào mã nguồn",
+            "B. Vượt qua giới hạn bộ nhớ của CPU",
+            "C. Giảm bớt khó khăn cho lập trình viên bằng cách chuyển việc tạo/quản lý tiểu trình cho trình biên dịch và thư viện run-time",
+            "D. Ẩn thông tin cá nhân của người dùng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Ba phương pháp thiết kế \"Tiểu trình ẩn\" chủ yếu được đề cập là gì?",
+        "options": [
+            "A. Pthreads, Win32, Java",
+            "B. Thread Pools, OpenMP, Grand Central Dispatch (GCD)",
+            "C. Fork, Exec, Join",
+            "D. Serial, Concurrent, Parallel"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thread Pool (Vùng lưu trữ tiểu trình) hoạt động theo cơ chế nào?",
+        "options": [
+            "A. Tự động tắt máy khi tạo quá nhiều tiến trình",
+            "B. Xóa bỏ hoàn toàn khái niệm tiểu trình",
+            "C. Tạo sẵn một số tiểu trình trong vùng lưu trữ, nơi các tiểu trình chờ đợi công việc",
+            "D. Mã hóa tất cả các tiểu trình"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Đâu là ưu điểm của Thread Pool?",
+        "options": [
+            "A. Tốc độ tạo chậm hơn để đảm bảo an toàn",
+            "B. Đáp ứng yêu cầu với tiểu trình có sẵn nhanh hơn là tạo mới, cho phép giới hạn số lượng tiểu trình",
+            "C. Cho phép mỗi tiểu trình dùng không giới hạn RAM",
+            "D. Yêu cầu lập trình viên can thiệp thủ công vào CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "OpenMP được định nghĩa là gì?",
+        "options": [
+            "A. Một hệ điều hành mạng",
+            "B. Một tập các chỉ thị biên dịch (compiler directives) như một API cho C, C++, FORTRAN để hỗ trợ lập trình song song",
+            "C. Ngôn ngữ lập trình mã nguồn mở",
+            "D. Ứng dụng vẽ đồ họa song song"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Code) Cú pháp chỉ thị nào của OpenMP được dùng để xác định một \"vùng song song\" (parallel regions)?",
+        "options": [
+            "A. #include <omp.h>",
+            "B. parallel_start()",
+            "C. #pragma omp parallel",
+            "D. #define OPENMP"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khi áp dụng lệnh #pragma omp parallel for vào một vòng lặp for, OpenMP sẽ làm gì?",
+        "options": [
+            "A. Bỏ qua vòng lặp đó",
+            "B. Chia vòng lặp và chạy song song trên nhiều tiểu trình/lõi",
+            "C. Chạy vòng lặp vô tận",
+            "D. Dừng toàn bộ chương trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Grand Central Dispatch (GCD) là công nghệ của hãng nào phát triển cho Mac OS X và iOS?",
+        "options": [
+            "A. Microsoft",
+            "B. Google",
+            "C. Sun Microsystems",
+            "D. Apple"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "(Bài tập Code) Trong GCD, khối lệnh (block) cần thực thi song song được đặt trong cú pháp nào?",
+        "options": [
+            "A. { // code }",
+            "B. ^{ // code }",
+            "C. [ // code ]",
+            "D. < // code >"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hai loại hàng đợi phân phối (dispatch queues) trong công nghệ GCD là gì? 54 Nguyễn Chí Cường",
+        "options": [
+            "A. Stack và Heap",
+            "B. PUSH và POP",
+            "C. Serial (tuần tự) và Concurrent (đồng thời)",
+            "D. User và Kernel"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Đặc điểm chung của cả hàng đợi Serial và Concurrent trong GCD là gì?",
+        "options": [
+            "A. Đều lấy các khối ra theo cơ chế LIFO",
+            "B. Đều lấy các khối ra theo cơ chế FIFO (Vào trước ra trước)",
+            "C. Chỉ chạy 1 khối tại 1 thời điểm",
+            "D. Đều chặn hệ thống hoạt động"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "API chính để thao tác với HĐH Windows (bao gồm tạo tiểu trình) được gọi là gì?",
+        "options": [
+            "A. Win64 API",
+            "B. Windows API (Win32 API)",
+            "C. POSIX",
+            "D. Microsoft Foundation Classes (MFC)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Việc quản lý tiểu trình trên hệ điều hành Windows được thiết kế theo mô hình nào?",
+        "options": [
+            "A. Many-to-Many",
+            "B. Many-to-One 55 Nguyễn Chí Cường",
+            "C. One-to-One cấp độ nhân",
+            "D. Mô hình 2 mức"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "\"Ngữ cảnh của tiểu trình\" (Context of the thread) trong Windows bao gồm những gì?",
+        "options": [
+            "A. GUI và API",
+            "B. Tập thanh ghi, Ngăn xếp (stack) và Vùng lưu trữ riêng (private storage area)",
+            "C. Mã HTML và CSS",
+            "D. Danh sách các tiến trình cha"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong HĐH Windows, ngăn xếp của tiểu trình được tách ra làm hai loại nào?",
+        "options": [
+            "A. Ngăn xếp cha và Ngăn xếp con",
+            "B. Ngăn xếp Đọc và Ngăn xếp Ghi",
+            "C. Ngăn xếp User (chế độ người dùng) và Ngăn xếp Kernel (chế độ hạt nhân)",
+            "D. Ngăn xếp Tĩnh và Ngăn xếp Động"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Cấu trúc dữ liệu chính quản lý tiểu trình trên Windows bao gồm 3 khối (block) nào?",
+        "options": [
+            "A. PCB, TCB, MCB",
+            "B. ETHREAD, KTHREAD, TEB",
+            "C. EPROCESS, KPROCESS, PEB",
+            "D. USER_THREAD, KERNEL_THREAD, SYS_THREAD 56 Nguyễn Chí Cường"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong cấu trúc tiểu trình Windows, khối ETHREAD (executive thread block) chứa thông tin gì và tồn tại ở đâu?",
+        "options": [
+            "A. Chứa thông tin giao diện và ở vùng không gian user",
+            "B. Chứa con trỏ trỏ tới tiến trình cha và con trỏ KTHREAD, tồn tại trong không gian nhân (Kernel space)",
+            "C. Chứa mã định danh tiểu trình và ở vùng nhớ Cache",
+            "D. Chứa bảng phân trang bộ nhớ"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khối KTHREAD (kernel thread block) của Windows chứa những thông tin chủ yếu nào?",
+        "options": [
+            "A. Mã nguồn của chương trình người dùng",
+            "B. Thông tin định thời, đồng bộ, một ngăn xếp chế độ nhân, và con trỏ trỏ tới TEB",
+            "C. Địa chỉ IP của máy khách",
+            "D. Mảng lưu trữ cục bộ cho biến toàn cục"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Mảng lưu trữ cục bộ, ngăn xếp trong chế độ người dùng (User stack) và mã định danh tiểu trình được lưu tại khối nào trong cấu trúc Windows?",
+        "options": [
+            "A. KTHREAD",
+            "B. ETHREAD",
+            "C. TEB (thread environment block) nằm trong không gian người dùng",
+            "D. PCB (Process Control Block)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Việc các tiến trình truy cập đồng thời đến dữ liệu chia sẻ có thể dẫn đến hậu quả gì?",
+        "options": [
+            "A. Tiết kiệm tài nguyên bộ nhớ",
+            "B. Dữ liệu không nhất quán (mâu thuẫn)",
+            "C. Tăng tốc độ tính toán của CPU",
+            "D. Hỗ trợ hệ thống chạy trên đa lõi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Bài toán Producer-Consumer yêu cầu hai tiến trình thực hiện nhiệm vụ gì?",
+        "options": [
+            "A. Producer lấy thông tin, Consumer thêm thông tin",
+            "B. Cả hai cùng lấy thông tin để xử lý",
+            "C. Producer sản xuất (thêm) thông tin vào vùng đệm, Consumer tiêu thụ (lấy) thông tin từ vùng đệm",
+            "D. Producer quản lý RAM, Consumer quản lý ổ cứng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong bài toán Producer-Consumer giải quyết bằng vùng đệm vòng (bounded- buffer), con trỏ IN và OUT có vai trò gì?",
+        "options": [
+            "A. Con trỏ IN trỏ đến ô trống kế tiếp, con trỏ OUT trỏ đến ô đầy đầu tiên",
+            "B. Con trỏ IN trỏ đến ô đầy đầu tiên, con trỏ OUT trỏ đến ô trống kế tiếp",
+            "C. Cả hai đều trỏ vào phần tử cuối cùng",
+            "D. Con trỏ IN trỏ vào ổ cứng, con trỏ OUT trỏ vào RAM"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Khi dùng biến counter để đếm số lượng ô đầy trong vùng đệm của bài toán Producer-Consumer, giá trị khởi tạo ban đầu của counter là bao nhiêu?",
+        "options": [
+            "A. BUFFER_SIZE",
+            "B. 1",
+            "C. 0",
+            "D. -1"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong quá trình xử lý mã máy, thao tác counter++ của tiến trình Producer thực chất được thực hiện qua mấy câu lệnh mã máy (sử dụng thanh ghi)?",
+        "options": [
+            "A. 1 lệnh duy nhất",
+            "B. 2 lệnh",
+            "C. 3 lệnh",
+            "D. 4 lệnh"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tranh đoạt điều khiển (race condition) được định nghĩa là tình huống như thế nào?",
+        "options": [
+            "A. Nhiều tiến trình tranh giành băng thông mạng",
+            "B. Nhiều tiến trình cùng thao tác trên dữ liệu chung và kết quả phụ thuộc vào thứ tự thực hiện",
+            "C. CPU chia sẻ thời gian cho quá nhiều tiến trình",
+            "D. Bộ nhớ bị cạn kiệt do tạo nhiều tiến trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giải pháp bắt buộc để tránh tình trạng tranh đoạt điều khiển là gì? 59 Nguyễn Chí Cường",
+        "options": [
+            "A. Nâng cấp phần cứng máy tính",
+            "B. Tắt bớt các ứng dụng đang chạy",
+            "C. Đồng bộ hóa các tiến trình theo một phương thức nào đó",
+            "D. Cấp phát thêm vùng đệm"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong cấu trúc của một tiến trình, đoạn mã mà tiến trình có thể thay đổi các biến chung, cập nhật bảng, ghi tập tin được gọi là gì?",
+        "options": [
+            "A. Remainder section (Phần còn lại)",
+            "B. Entry section (Phần vào)",
+            "C. Exit section (Phần ra)",
+            "D. Critical section (Miền găng)"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Cấu trúc tổng quát của tiến trình Pi trong bài toán miền găng lần lượt bao gồm các phần nào?",
+        "options": [
+            "A. Entry section -> Critical section -> Exit section -> Remainder section",
+            "B. Critical section -> Entry section -> Remainder section -> Exit section",
+            "C. Entry section -> Remainder section -> Critical section -> Exit section",
+            "D. Exit section -> Critical section -> Entry section -> Remainder section"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Yêu cầu \"Độc quyền truy xuất\" (Mutual Exclusion) trong bài toán miền găng có ý nghĩa gì?",
+        "options": [
+            "A. Tất cả các tiến trình phải cùng vào miền găng một lúc 60 Nguyễn Chí Cường",
+            "B. Tiến trình bị treo vô thời hạn khi vào miền găng",
+            "C. Nếu tiến trình Pi đang thực thi trong miền găng, không tiến trình nào khác được thực thi trong miền găng của chúng",
+            "D. Hạn chế số lần gọi hệ thống"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Yêu cầu \"Tiến độ\" (Progress) trong giải pháp cho miền găng đảm bảo điều gì?",
+        "options": [
+            "A. Nếu không có tiến trình nào trong miền găng và có tiến trình muốn vào, việc lựa chọn tiến trình tiếp theo không bị trì hoãn vô hạn",
+            "B. Tiến trình đang chạy có thể độc quyền CPU mãi mãi",
+            "C. Tiến trình phải hoàn thành trong 1 mili-giây",
+            "D. Việc lựa chọn tiến trình được thực hiện ngẫu nhiên"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Giới hạn chờ (Bounded waiting) có nghĩa là gì?",
+        "options": [
+            "A. Thời gian CPU chờ sự kiện I/O là có giới hạn",
+            "B. Tồn tại một giới hạn số lần vào miền găng của các tiến trình khác sau khi một tiến trình yêu cầu vào miền găng mà chưa được chấp nhận",
+            "C. Bộ nhớ RAM bị giới hạn dung lượng",
+            "D. CPU chỉ chờ ngắt phần cứng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khi quản lý miền găng trong HĐH, cách tiếp cận \"Độc quyền\" (nonpreemptive) có đặc điểm nào sau đây?",
+        "options": [
+            "A. Cho phép tiến trình chạy trong chế độ nhân được ưu tiên 61 Nguyễn Chí Cường",
+            "B. Không cho phép một tiến trình đang chạy trong chế độ nhân được ưu tiên, do đó không có tranh đoạt điều khiển",
+            "C. Buộc tất cả tiến trình phải vào hàng đợi",
+            "D. Tự động xóa tiến trình khi xảy ra lỗi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giải pháp Peterson (bằng phần mềm) được thiết kế tối ưu để áp dụng cho bao nhiêu tiến trình?",
+        "options": [
+            "A. 1 tiến trình",
+            "B. 2 tiến trình",
+            "C. 3 tiến trình",
+            "D. N tiến trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong giải pháp Peterson, 2 tiến trình chia sẻ 2 biến số nào?",
+        "options": [
+            "A. int turn và Boolean flag",
+            "B. int count và Boolean lock",
+            "C. int flag và Boolean turn",
+            "D. Semaphore mutex và int turn"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Biến flag[i] = true trong giải pháp Peterson mang ý nghĩa gì?",
+        "options": [
+            "A. Tiến trình Pi đã hoàn thành công việc",
+            "B. Tiến trình Pi sẵn sàng vào miền găng (Critical Section)",
+            "C. Tiến trình Pi nhường quyền cho tiến trình Pj 62 Nguyễn Chí Cường",
+            "D. Lỗi phần cứng đã xảy ra"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong mã nguồn của giải pháp Peterson, điều kiện vòng lặp while để tiến trình Pi phải chờ (đứng ngoài miền găng) là gì?",
+        "options": [
+            "A. while (flag[i] == false);",
+            "B. while (turn == i);",
+            "C. while (flag[j] && turn == j);",
+            "D. while (true);"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Công cụ đơn giản nhất do các nhà thiết kế HĐH xây dựng để bảo vệ miền găng là gì?",
+        "options": [
+            "A. Khóa loại trừ (Mutex locks)",
+            "B. Bảng phân trang",
+            "C. Cây nhị phân",
+            "D. Thuật toán nhà băng"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Hai hàm cơ bản được sử dụng trong Khóa loại trừ (Mutex locks) để bảo vệ miền găng là gì?",
+        "options": [
+            "A. wait() và signal()",
+            "B. acquire() và release()",
+            "C. open() và close()",
+            "D. lock() và unlock() 63 Nguyễn Chí Cường"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hạn chế lớn nhất của giải pháp Khóa loại trừ (Mutex locks) cơ bản là gì?",
+        "options": [
+            "A. Tốn nhiều dung lượng ổ cứng",
+            "B. Yêu cầu cơ chế bận thì đợi (busy waiting), gây lãng phí CPU",
+            "C. Không thể sử dụng cho 2 tiến trình",
+            "D. Chỉ chạy trên Linux"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Loại khóa sử dụng cơ chế bận thì đợi (busy waiting) thường được gọi là gì?",
+        "options": [
+            "A. Deadlock",
+            "B. Mutex",
+            "C. Spinlock",
+            "D. Semaphore"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Ai là người phát minh ra khái niệm Semaphore vào năm 1965?",
+        "options": [
+            "A. Alan Turing",
+            "B. Bill Gates",
+            "C. Edsger Wybe Dijkstra",
+            "D. Linus Torvalds"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Semaphore S bản chất là một kiểu dữ liệu gì?",
+        "options": [
+            "A. Số thực 64 Nguyễn Chí Cường",
+            "B. Mảng ký tự",
+            "C. Con trỏ",
+            "D. Biến nguyên (số nguyên)"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Semaphore chỉ có thể được truy cập thông qua 2 toán tử nguyên tố (hàm) nào?",
+        "options": [
+            "A. wait() (hoặc P()) và signal() (hoặc V())",
+            "B. acquire() và release()",
+            "C. start() và stop()",
+            "D. push() và pop()"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong định nghĩa cơ bản (có busy waiting), thao tác signal(S) thực hiện công việc gì đối với biến S?",
+        "options": [
+            "A. Gán S = 0",
+            "B. Giảm S đi 1 (S--)",
+            "C. Tăng S lên 1 (S++)",
+            "D. Khóa S lại"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khái niệm \"Semaphore nhị phân\" (Binary semaphore) có nghĩa là gì?",
+        "options": [
+            "A. Giá trị nguyên không bị giới hạn",
+            "B. Giá trị nguyên chỉ là 0 hoặc 1",
+            "C. Cấu tạo từ các bit 0 và 1 trên đĩa cứng",
+            "D. Chỉ cho phép 2 tiến trình chia sẻ 65 Nguyễn Chí Cường"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Logic) Tiến trình P1 có lệnh S1, tiến trình P2 có lệnh S2. Để S2 luôn thực thi SAU S1, ta khởi tạo semaphore synch = 0. Tiến trình P1 thực thi S1; signal(synch);. Tiến trình P2 cần thực thi chuỗi lệnh nào?",
+        "options": [
+            "A. wait(synch); S2;",
+            "B. signal(synch); S2;",
+            "C. S2; wait(synch);",
+            "D. S2; signal(synch);"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Để loại bỏ cơ chế \"bận thì đợi\" (busy waiting) trong Semaphore, HĐH bổ sung hai thao tác nào để quản lý hàng đợi tiến trình?",
+        "options": [
+            "A. Read và Write",
+            "B. Block (đưa tiến trình vào hàng đợi) và Wakeup (chuyển tiến trình sang Ready)",
+            "C. Start và Kill",
+            "D. Push và Pop"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong cấu trúc dữ liệu của Semaphore không có busy waiting, mỗi phần tử trong hàng đợi (waiting queue) chứa 2 thành phần nào?",
+        "options": [
+            "A. Giá trị (số nguyên) và con trỏ tới bản ghi kế tiếp trong danh sách",
+            "B. Biến boolean và lệnh thực thi",
+            "C. Thanh ghi CPU và bộ đếm chương trình",
+            "D. Biến turn và mảng flag"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Hiện tượng hai hoặc nhiều tiến trình đang chờ đợi vô hạn cho một sự kiện chỉ có thể được sinh ra bởi một trong các tiến trình đang chờ đó, được gọi là gì?",
+        "options": [
+            "A. Tắc nghẽn (Deadlock)",
+            "B. Đảo độ ưu tiên (Priority Inversion)",
+            "C. Đói CPU (Starvation)",
+            "D. Tranh đoạt điều khiển (Race condition)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Tình trạng \"Đói CPU\" (Starvation) trong đồng bộ hóa tiến trình được hiểu là gì?",
+        "options": [
+            "A. Tiến trình bị xóa khỏi RAM do thiếu bộ nhớ",
+            "B. Tiến trình không bao giờ được rời khỏi hàng đợi semaphore nơi nó bị tạm dừng",
+            "C. Các tiến trình tranh nhau CPU dẫn đến màn hình xanh",
+            "D. CPU bị quá nhiệt do làm việc liên tục"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Đảo độ ưu tiên (Priority Inversion) xảy ra trong trường hợp nào?",
+        "options": [
+            "A. Tiến trình ưu tiên cao phải chờ tiến trình ưu tiên thấp do ưu tiên thấp đang giữ khóa mà ưu tiên cao cần",
+            "B. HĐH tự động thay đổi độ ưu tiên của tiến trình ngẫu nhiên",
+            "C. Người dùng hạ thấp độ ưu tiên của hệ thống",
+            "D. Tiến trình con thay thế tiến trình cha"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong bài toán \"Vùng đệm có giới hạn\" (Bounded-buffer) với N ô nhớ, Semaphore empty và Semaphore full được khởi tạo giá trị lần lượt là bao nhiêu?",
+        "options": [
+            "A. empty = 0, full = N",
+            "B. empty = 1, full = 0",
+            "C. empty = N, full = 0",
+            "D. empty = 0, full = 0"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Code) Trong cấu trúc tiến trình Consumer của bài toán vùng đệm, để lấy một phần tử ra, Consumer phải gọi chuỗi hàm nào đầu tiên?",
+        "options": [
+            "A. wait(full); wait(mutex);",
+            "B. wait(empty); wait(mutex);",
+            "C. signal(full); signal(mutex);",
+            "D. wait(mutex); wait(empty);"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong bài toán \"Tiến trình Đọc - Ghi\" (Readers - Writers), các tiến trình Reader có tính chất gì?",
+        "options": [
+            "A. Có thể đọc và thay đổi dữ liệu",
+            "B. Chỉ đọc dữ liệu, không thực hiện bất kỳ thay đổi nào",
+            "C. Có quyền xóa dữ liệu",
+            "D. Có quyền cấp phát bộ nhớ"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tính đồng bộ yêu cầu đối với tiến trình Writer trong bài toán Đọc - Ghi là gì? 68 Nguyễn Chí Cường",
+        "options": [
+            "A. Nhiều tiến trình Writer có thể ghi cùng lúc",
+            "B. Chỉ duy nhất một tiến trình Writer được truy cập dữ liệu chia sẻ tại cùng thời điểm",
+            "C. Writer phải luôn chờ Reader đọc xong toàn bộ hệ thống vĩnh viễn",
+            "D. Writer phải ghi vào tệp nhật ký (log) ngoài RAM"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong bài toán Đọc - Ghi, biến số nguyên Read_count dùng để làm gì và được khởi tạo là bao nhiêu?",
+        "options": [
+            "A. Đếm số lần CPU ngắt, khởi tạo = 1",
+            "B. Theo dõi số lượng các tiến trình Reader đang đọc dữ liệu, khởi tạo = 0",
+            "C. Đếm số lượng Writer, khởi tạo = 1",
+            "D. Đếm dung lượng tệp tin, khởi tạo = 0"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Biến thể \"Dạng 1\" của bài toán Đọc - Ghi ưu tiên đối tượng nào?",
+        "options": [
+            "A. Ưu tiên Writer, Writer ghi càng sớm càng tốt",
+            "B. Không có Reader nào phải chờ trừ khi Writer có quyền sử dụng dữ liệu (Ưu tiên Reader)",
+            "C. Ưu tiên theo độ lớn tiến trình",
+            "D. Ngẫu nhiên theo thời gian thực"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong bài toán \"Bữa ăn tối của các triết gia\" (Dining Philosophers), có bao nhiêu triết gia và bao nhiêu chiếc đũa?",
+        "options": [
+            "A. 4 triết gia, 5 đũa 69 Nguyễn Chí Cường",
+            "B. 5 triết gia, 5 đũa",
+            "C. 5 triết gia, 10 đũa",
+            "D. 3 triết gia, 3 đũa"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Điều kiện để một triết gia có thể ăn là gì?",
+        "options": [
+            "A. Phải suy nghĩ xong 1 tiếng",
+            "B. Phải có 1 chiếc đũa bên phải",
+            "C. Phải có đủ 2 chiếc đũa gần nhất ở bên phải và bên trái mình, và chỉ được lấy 1 chiếc 1 lần",
+            "D. Phải chờ người bên cạnh đút cho"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Để giải quyết bài toán các triết gia, mảng Semaphore chopstick được khởi tạo với giá trị bằng bao nhiêu cho mỗi phần tử?",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 5",
+            "D. -1"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Code) Để lấy chiếc đũa bên tay phải, triết gia thứ i (từ 0 đến 4) sẽ thực hiện hàm nào? (Giả sử chiếc đũa trái là i)",
+        "options": [
+            "A. wait(chopstick[i+1]);",
+            "B. wait(chopstick[(i + 1) % 5]); 70 Nguyễn Chí Cường",
+            "C. signal(chopstick[i]);",
+            "D. wait(chopstick[(i + 4) % 5]);"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Để xử lý hiện tượng Tắc nghẽn (Deadlock) trong bài toán triết gia, phương pháp \"Bất đối xứng\" hoạt động như thế nào?",
+        "options": [
+            "A. Cho 4 người ngồi vào bàn cùng lúc",
+            "B. Triết gia lẻ lấy đũa trái trước rồi phải sau; Triết gia chẵn lấy đũa phải trước rồi trái sau",
+            "C. Cho phép lấy đũa của người đối diện",
+            "D. Phát thêm 5 chiếc dĩa"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một vấn đề nghiêm trọng có thể xảy ra nếu lập trình viên gọi sai thứ tự wait(mutex) và signal(mutex) là gì?",
+        "options": [
+            "A. Máy tính sẽ tự động khởi động lại",
+            "B. Trình biên dịch sẽ báo lỗi cú pháp",
+            "C. Có thể xảy ra Tắc nghẽn (Deadlock) và Đói CPU (Starvation)",
+            "D. Dung lượng RAM sẽ tăng lên"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "\"Monitor\" trong hệ điều hành được định nghĩa là gì?",
+        "options": [
+            "A. Một màn hình hiển thị kết quả",
+            "B. Giải pháp trừu tượng hóa mức cao (Kiểu dữ liệu trừu tượng - ADT) cung cấp cơ chế tiện lợi để đồng bộ hóa",
+            "C. Khóa phần cứng chuyên dụng 71 Nguyễn Chí Cường",
+            "D. Thuật toán phân trang bộ nhớ"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Đặc điểm cốt lõi của tiến trình bên trong Monitor là gì?",
+        "options": [
+            "A. Có thể chạy vô số tiến trình song song bên trong",
+            "B. Chỉ có một tiến trình duy nhất có thể hoạt động bên trong monitor tại một thời điểm",
+            "C. Tiến trình trong monitor không bao giờ kết thúc",
+            "D. Các biến nội bộ có thể được truy cập tự do từ bên ngoài"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong một monitor, biến điều kiện (Condition variables) hỗ trợ 2 thao tác nào?",
+        "options": [
+            "A. wait() và signal()",
+            "B. acquire() và release()",
+            "C. block() và wakeup()",
+            "D. P() và V()"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Nếu tiến trình Q đang tạm ngưng tại lệnh x.wait(), và tiến trình P gọi x.signal(). Theo sự thỏa hiệp của ngôn ngữ Concurrent Pascal (Lựa chọn biến điều kiện), điều kiện gì sẽ xảy ra?",
+        "options": [
+            "A. P tiếp tục chạy, Q bị hủy bỏ",
+            "B. P đang thực thi signal sẽ rời Monitor thì Q được khôi phục",
+            "C. Cả 2 cùng thực thi song song",
+            "D. HĐH bị tắc nghẽn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong giải pháp Monitor cho bài toán Cấp phát tài nguyên duy nhất (Resource Allocator), lệnh R.acquire(t) dùng biến t (thời gian) để làm gì?",
+        "options": [
+            "A. Đặt mật khẩu truy cập",
+            "B. Phân mảnh bộ nhớ",
+            "C. Làm số ưu tiên để quy định thời gian tối đa cho việc sử dụng tài nguyên của tiến trình",
+            "D. Tính tổng số tiến trình"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khi thực thi Monitor sử dụng cấu trúc Semaphore, để đảm bảo độc quyền truy xuất cho các thủ tục, mỗi thủ tục F trong Monitor phải bắt đầu bằng hàm gì?",
+        "options": [
+            "A. signal(next);",
+            "B. wait(mutex);",
+            "C. signal(mutex);",
+            "D. wait(x_sem);"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Mục tiêu đạt tới của hệ thống đa chương (multiprogramming) là gì?",
+        "options": [
+            "A. Tối đa việc sử dụng CPU",
+            "B. Tối đa hóa thời gian chờ",
+            "C. Tối giản bộ nhớ RAM",
+            "D. Tăng thời gian chuyển ngữ cảnh"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Việc thực thi của một tiến trình bao gồm luân phiên giữa hai chu kỳ nào? 73 Nguyễn Chí Cường",
+        "options": [
+            "A. RAM burst và Disk burst",
+            "B. CPU burst và I/O burst",
+            "C. Network burst và CPU burst",
+            "D. Ready burst và Wait burst"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một chu kỳ thực thi của tiến trình thường bắt đầu bằng hoạt động nào?",
+        "options": [
+            "A. I/O burst",
+            "B. Chuyển ngữ cảnh",
+            "C. CPU burst",
+            "D. Sinh ra tiến trình con"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tâm điểm của việc thiết kế Hệ điều hành trong định thời là phân phối hoạt động nào?",
+        "options": [
+            "A. RAM burst",
+            "B. CPU burst",
+            "C. I/O burst",
+            "D. Network burst"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thành phần nào chịu trách nhiệm lựa chọn 1 trong các tiến trình nằm sẵn trong hàng đợi Ready để cấp phát CPU?",
+        "options": [
+            "A. Bộ phân phối (Dispatcher)",
+            "B. Bộ định thời trung hạn 74 Nguyễn Chí Cường",
+            "C. Bộ định thời ngắn hạn (Short-term scheduler)",
+            "D. Khối điều khiển tiến trình (PCB)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Việc định thời CPU xảy ra khi tiến trình chuyển từ trạng thái Running sang Waiting thuộc cơ chế nào?",
+        "options": [
+            "A. Không độc quyền (Preemptive)",
+            "B. Độc quyền (Nonpreemptive)",
+            "C. Chia sẻ thời gian (Time-sharing)",
+            "D. Phân tán"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Việc định thời theo cơ chế KHÔNG độc quyền (preemptive) diễn ra trong trường hợp nào dưới đây?",
+        "options": [
+            "A. Tiến trình chuyển từ Running sang Waiting",
+            "B. Tiến trình chuyển từ Running sang Ready",
+            "C. Tiến trình kết thúc việc thực thi",
+            "D. Tiến trình yêu cầu truy xuất I/O"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khi hệ điều hành áp dụng định thời cơ chế không độc quyền (preemptive), vấn đề nào KHÔNG cần phải xem xét?",
+        "options": [
+            "A. Việc truy xuất đến dữ liệu chia sẻ",
+            "B. Tính ưu tiên khi ở chế độ nhân (kernel mode)",
+            "C. Các ngắt xảy ra trong các hoạt động quyết định của HĐH 75 Nguyễn Chí Cường",
+            "D. Việc khởi động lại máy tính người dùng"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Thành phần nào thực hiện việc \"Chuyển điều khiển của CPU cho tiến trình được chọn bởi bộ định thời ngắn hạn\"?",
+        "options": [
+            "A. Bộ phân phối (Dispatcher)",
+            "B. Bộ đếm chương trình (PC)",
+            "C. Bộ nhớ đệm (Cache)",
+            "D. Hàng đợi sẵn sàng (Ready queue)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Chức năng của Bộ phân phối (Dispatcher) bao gồm những gì?",
+        "options": [
+            "A. Chuyển ngữ cảnh, chuyển sang chế độ người dùng, nhảy tới vị trí thích hợp để khởi động chương trình",
+            "B. Tính toán độ ưu tiên, cập nhật thời gian chờ",
+            "C. Giải phóng bộ nhớ RAM khi tiến trình kết thúc",
+            "D. Tạm ngưng và hoán đổi tiến trình ra đĩa cứng"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "\"Dispatch latency\" (Thời gian trễ phân phối) được định nghĩa là gì?",
+        "options": [
+            "A. Thời gian CPU thực thi một câu lệnh",
+            "B. Thời gian cần cho bộ phân phối dừng một tiến trình và bắt đầu chạy một tiến trình khác",
+            "C. Thời gian tiến trình chờ thiết bị ngoại vi",
+            "D. Thời gian lưu trữ dữ liệu vào ổ cứng 76 Nguyễn Chí Cường"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tiêu chuẩn định thời \"Thông lượng\" (Throughput) dùng để chỉ điều gì?",
+        "options": [
+            "A. Số lượng người dùng truy cập cùng lúc",
+            "B. Thời gian tiến trình chờ trong hàng đợi",
+            "C. Số tiến trình hoàn thành việc thực thi trên mỗi đơn vị thời gian",
+            "D. Lượng dữ liệu mạng truyền qua trong 1 giây"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "\"Turnaround time\" (Thời gian hoàn tất) có nghĩa là gì?",
+        "options": [
+            "A. Lượng thời gian tiến trình chờ ở trạng thái Ready",
+            "B. Lượng thời gian để thực hiện một tiến trình cụ thể (từ lúc vào đến lúc xong)",
+            "C. Lượng thời gian giữ cho CPU bận",
+            "D. Thời gian hệ điều hành khởi động"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lượng thời gian phải mất từ khi một yêu cầu được gửi cho đến khi đáp ứng đầu tiên được trả lời gọi là gì?",
+        "options": [
+            "A. Waiting time",
+            "B. Turnaround time",
+            "C. Dispatch latency",
+            "D. Response time"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Để tối ưu hóa hệ thống, người thiết kế HĐH cần làm gì với các tiêu chuẩn định thời?",
+        "options": [
+            "A. Cực tiểu việc sử dụng CPU, Cực đại thời gian hoàn tất",
+            "B. Cực đại CPU utilization và Thông lượng; Cực tiểu thời gian hoàn tất, chờ và đáp ứng",
+            "C. Cực đại tất cả các tiêu chuẩn",
+            "D. Cực tiểu tất cả các tiêu chuẩn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giải thuật FCFS là viết tắt của thuật ngữ nào?",
+        "options": [
+            "A. First-Come, First-Served",
+            "B. Fast-CPU, Fast-Served",
+            "C. First-Core, First-Scheduled",
+            "D. Free-CPU, Free-Space"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Giải thuật SJF là viết tắt của thuật ngữ nào?",
+        "options": [
+            "A. Shortest-Job-First",
+            "B. Standard-Job-First",
+            "C. System-Job-First",
+            "D. Synchronized-Job-First"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập FCFS) Giả sử có 3 tiến trình đến theo thứ tự P1, P2, P3. Thời gian xử lý của P1 = 24, P2 = 3, P3 = 3. Thời gian chờ của tiến trình P2 là bao nhiêu?",
+        "options": [
+            "A. 0 78 Nguyễn Chí Cường",
+            "B. 3",
+            "C. 24",
+            "D. 27"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập FCFS) Cùng với ví dụ trên (P1=24, P2=3, P3=3; thứ tự P1, P2, P3), thời gian chờ trung bình là bao nhiêu?",
+        "options": [
+            "A. 10",
+            "B. 17",
+            "C. 27",
+            "D. 30"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập FCFS) Nếu 3 tiến trình trên (P1=24, P2=3, P3=3) đến theo thứ tự P2, P3, P1 thì thời gian chờ của P1 là bao nhiêu?",
+        "options": [
+            "A. 0",
+            "B. 3",
+            "C. 6",
+            "D. 24"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập FCFS) Với thứ tự P2, P3, P1 như trên, thời gian chờ trung bình lúc này sẽ là bao nhiêu?",
+        "options": [
+            "A. 3",
+            "B. 6 79 Nguyễn Chí Cường",
+            "C. 17",
+            "D. 10"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập FCFS) Cho bảng tiến trình: P1(Vào lúc 0, xử lý 10), P2(Vào lúc 1, xử lý 1), P3(Vào lúc 2.5, xử lý 2), P4(Vào lúc 3, xử lý 1), P5(Vào lúc 4.5, xử lý 5). Thời gian chờ trung bình theo FCFS là bao nhiêu?",
+        "options": [
+            "A. 5.5",
+            "B. 6.2",
+            "C. 7.4",
+            "D. 8.5"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nguyên tắc hoạt động của giải thuật Shortest-Job-First (SJF) là gì?",
+        "options": [
+            "A. Cấp phát CPU cho tiến trình đến sớm nhất",
+            "B. Gắn mỗi tiến trình với độ dài CPU burst tiếp theo của nó, định thời tiến trình có thời gian ngắn nhất",
+            "C. Cấp CPU cho tiến trình có mức độ quan trọng do người dùng chọn",
+            "D. Luân phiên chia thời gian cho các tiến trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tính chất quan trọng nhất của giải thuật SJF là gì?",
+        "options": [
+            "A. Dễ lập trình nhất",
+            "B. Đảm bảo 100% không bị đói CPU",
+            "C. Là giải thuật tối ưu - cung cấp thời gian chờ trung bình nhỏ nhất cho một tập tiến trình 80 Nguyễn Chí Cường",
+            "D. Chỉ chạy được trên chế độ ưu tiên"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập SJF Độc quyền) Cho 4 tiến trình đến cùng lúc: P1(6), P2(8), P3(7), P4(3). Thứ tự thực hiện trên biểu đồ Gantt sẽ là gì?",
+        "options": [
+            "A. P1 -> P2 -> P3 -> P4",
+            "B. P4 -> P1 -> P3 -> P2",
+            "C. P4 -> P3 -> P1 -> P2",
+            "D. P2 -> P3 -> P1 -> P4"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập SJF Độc quyền) Ở ví dụ trên, thời gian chờ của P3 là bao nhiêu?",
+        "options": [
+            "A. 0",
+            "B. 3",
+            "C. 9",
+            "D. 16"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập SJF Độc quyền) Với ví dụ trên, thời gian chờ trung bình của 4 tiến trình là bao nhiêu?",
+        "options": [
+            "A. 7",
+            "B. 9",
+            "C. 16",
+            "D. 24"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Giải thuật \"Shortest-remaining-time-first\" (SRTF) chính là giải thuật SJF kết hợp với cơ chế nào?",
+        "options": [
+            "A. Cơ chế độc quyền (Nonpreemptive)",
+            "B. Cơ chế phân mảnh",
+            "C. Cơ chế không độc quyền (Preemptive)",
+            "D. Cơ chế xoay vòng (Round Robin)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập SRTF) Có các tiến trình sau: P1(Đến 0, xử lý 8); P2(Đến 1, xử lý 4); P3(Đến 2, xử lý 9); P4(Đến 3, xử lý 5). Tại thời điểm t=1 khi P2 đến, CPU sẽ xử lý như thế nào?",
+        "options": [
+            "A. P1 tiếp tục chạy vì đã được cấp quyền trước",
+            "B. HĐH ngắt P1, chuyển CPU cho P2 vì phần thời gian còn lại của P1 (7) lớn hơn thời gian của P2 (4)",
+            "C. CPU chia đôi thời gian cho P1 và P2",
+            "D. Đưa P2 vào hàng chờ vô hạn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập SRTF) Tiếp ví dụ trên, sau khi ngắt P1 ở thời điểm t=1, tiến trình P2 sẽ thực hiện và kết thúc tại thời điểm t bằng mấy?",
+        "options": [
+            "A. t = 4",
+            "B. t = 5",
+            "C. t = 9",
+            "D. t = 10"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập SRTF) Tại thời điểm t=5 (P2 vừa xong), các tiến trình còn lại là P1(còn 7), P3(còn 9), P4(còn 5). Tiến trình nào sẽ được chạy tiếp theo?",
+        "options": [
+            "A. P1",
+            "B. P3",
+            "C. P4",
+            "D. Tùy ý"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập SRTF) Thời gian chờ của tiến trình P4 (Đến lúc 3, bắt đầu chạy lúc 5) trong ví dụ này là bao nhiêu?",
+        "options": [
+            "A. 0",
+            "B. 2",
+            "C. 5",
+            "D. 8"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập SRTF) Với 4 tiến trình P1, P2, P3, P4 trong ví dụ trên, thời gian chờ trung bình của hệ thống là bao nhiêu?",
+        "options": [
+            "A. 5.5 msec",
+            "B. 6.5 msec",
+            "C. 7.5 msec",
+            "D. 8.0 msec"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nguyên tắc của giải thuật Định thời ưu tiên (Priority) là gì?",
+        "options": [
+            "A. CPU được cấp cho tiến trình đến sớm nhất",
+            "B. Mỗi tiến trình được gán một số ưu tiên, CPU cấp phát cho tiến trình có độ ưu tiên cao nhất",
+            "C. Cấp phát CPU ngẫu nhiên",
+            "D. Phân bổ đều thời gian bằng quantum"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong định thời Priority, hệ thống quy định độ lớn của mức ưu tiên như thế nào?",
+        "options": [
+            "A. Số nguyên nhỏ nhất tương ứng với độ ưu tiên cao nhất",
+            "B. Số nguyên lớn nhất tương ứng với độ ưu tiên cao nhất",
+            "C. Các số chẵn có ưu tiên cao hơn",
+            "D. Số âm không được dùng"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Có thể coi giải thuật SJF là một trường hợp đặc biệt của định thời Ưu tiên (Priority), trong đó độ ưu tiên là gì?",
+        "options": [
+            "A. Kích thước bộ nhớ RAM của tiến trình",
+            "B. Độ dài hàng đợi chờ",
+            "C. Nghịch đảo của thời gian CPU burst (thời gian burst càng lớn thì độ ưu tiên càng thấp)",
+            "D. Thời gian tiến trình đã chờ trong hệ thống"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Vấn đề \"Đói CPU\" (Starvation) trong giải thuật Priority là hiện tượng gì?",
+        "options": [
+            "A. CPU bị cạn kiệt tài nguyên 84 Nguyễn Chí Cường",
+            "B. Tiến trình có độ ưu tiên cao chiếm dụng toàn bộ bộ nhớ",
+            "C. Bộ nhớ Cache bị lỗi",
+            "D. Tiến trình có độ ưu tiên thấp có thể không bao giờ được thực thi vì luôn có tiến trình ưu tiên cao hơn chen ngang"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Giải pháp được hệ điều hành sử dụng để khắc phục tình trạng \"Đói CPU\" là gì?",
+        "options": [
+            "A. Restart tiến trình",
+            "B. Hạn chế mức độ đa chương",
+            "C. Tăng độ ưu tiên (Aging) - tăng dần độ ưu tiên của tiến trình theo thời gian chờ",
+            "D. Chạy lại tiến trình ở chế độ nhân"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Priority) Có 5 tiến trình (vào cùng lúc 0) với Thời gian xử lý và Độ ưu tiên (số nhỏ = ưu tiên cao) như sau: P1(10, pri:3); P2(1, pri:1); P3(2, pri:4); P4(1, pri:5); P5(5, pri:2). Tiến trình nào sẽ được chạy đầu tiên?",
+        "options": [
+            "A. P1",
+            "B. P2",
+            "C. P4",
+            "D. P5"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Priority) Tiếp ví dụ trên, thứ tự thực hiện trên biểu đồ Gantt sẽ là gì?",
+        "options": [
+            "A. P1 -> P2 -> P3 -> P4 -> P5",
+            "B. P2 -> P5 -> P1 -> P3 -> P4 85 Nguyễn Chí Cường",
+            "C. P4 -> P3 -> P1 -> P5 -> P2",
+            "D. P2 -> P1 -> P5 -> P3 -> P4"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Priority) Tiếp ví dụ trên, thời gian chờ của tiến trình P1 là bao nhiêu?",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 6",
+            "D. 16"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Priority) Thời gian chờ trung bình của 5 tiến trình trong ví dụ trên là bao nhiêu?",
+        "options": [
+            "A. 5.5 msec",
+            "B. 6.2 msec",
+            "C. 8.2 msec",
+            "D. 9.5 msec"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khái niệm \"quantum q\" trong giải thuật Round Robin (RR) dùng để chỉ điều gì?",
+        "options": [
+            "A. Dung lượng bộ nhớ tối đa cho phép",
+            "B. Một đơn vị thời gian nhỏ sử dụng CPU (thường từ 10-100 ms) được cấp cho mỗi tiến trình",
+            "C. Mã ưu tiên của tiến trình",
+            "D. Thời gian chuyển ngữ cảnh 86 Nguyễn Chí Cường"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong RR, điều gì xảy ra khi thời gian quantum (q) của một tiến trình đang chạy bị hết?",
+        "options": [
+            "A. Tiến trình bị kết thúc và xóa khỏi hệ thống",
+            "B. CPU bị treo",
+            "C. Tiến trình bị ngắt và được đưa vào cuối hàng đợi sẵn sàng (Ready Queue)",
+            "D. HĐH tự động tăng độ ưu tiên của nó"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nếu có n tiến trình trong hàng đợi sẵn sàng với thời gian quantum là q, thời gian TỐI ĐA một tiến trình phải đợi trước khi nhận CPU ở lượt kế tiếp là bao nhiêu?",
+        "options": [
+            "A. n×q",
+            "B. (n−1)q",
+            "C. (n+1)q",
+            "D. q/n"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Bộ phận nào gây ra ngắt (interrupt) sau mỗi khoảng quantum để chuyển đổi tiến trình trong RR?",
+        "options": [
+            "A. Bộ điều khiển đĩa",
+            "B. Khối quản lý bộ nhớ (MMU)",
+            "C. Bộ định giờ (Timer)",
+            "D. Màn hình (Monitor)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Điều gì xảy ra đối với hiệu suất của giải thuật RR nếu giá trị quantum q được chọn \"quá lớn\"?",
+        "options": [
+            "A. Hệ thống bị treo (Deadlock)",
+            "B. Tăng đột biến chi phí chuyển ngữ cảnh",
+            "C. RR thoái hóa và hoạt động giống hệt giải thuật FIFO (FCFS)",
+            "D. Tiết kiệm điện năng CPU"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Điều kiện lý tưởng về mặt thời gian để cấu hình giải thuật RR hiệu quả là gì?",
+        "options": [
+            "A. Thời gian quantum q phải nhỏ hơn thời gian chuyển ngữ cảnh",
+            "B. Thời gian quantum q phải cực kỳ nhỏ (vài microseconds)",
+            "C. Thời gian quantum q phải lớn hơn nhiều so với thời gian chuyển ngữ cảnh",
+            "D. Thời gian chuyển ngữ cảnh phải luôn lớn hơn q"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "So sánh Round Robin với SJF, nhận định nào sau đây là ĐÚNG?",
+        "options": [
+            "A. RR có thời gian hoàn tất trung bình thấp hơn SJF",
+            "B. RR có thời gian hoàn tất trung bình cao hơn SJF, nhưng tính đáp ứng tốt hơn",
+            "C. RR luôn dẫn đến Đói CPU",
+            "D. Cả hai đều là thuật toán độc quyền (nonpreemptive)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Round Robin) Giả sử P1=24, P2=3, P3=3 cùng đến tại t=0. Cho q = 4. CPU sẽ chạy P1 trong khoảng thời gian đầu tiên từ t=0 đến t=4. Tại t=4, tiến trình nào sẽ được chạy tiếp theo?",
+        "options": [
+            "A. P1 tiếp tục",
+            "B. P2",
+            "C. P3",
+            "D. Bất kỳ"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Theo mô hình hệ thống, mỗi tiến trình sử dụng tài nguyên theo trình tự 3 bước nào?",
+        "options": [
+            "A. Đọc (Read), Ghi (Write), Đóng (Close)",
+            "B. Yêu cầu (Request), Sử dụng (Use), Giải phóng (Release)",
+            "C. Cấp phát (Allocation), Sử dụng (Use), Xóa (Delete)",
+            "D. Chờ đợi (Wait), Thực thi (Run), Kết thúc (Terminate)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tắc nghẽn (Deadlock) được định nghĩa là tình huống như thế nào?",
+        "options": [
+            "A. Quá nhiều tiến trình cùng truy cập vào bộ nhớ RAM",
+            "B. CPU hoạt động quá công suất gây treo máy",
+            "C. Hai hoặc nhiều tiến trình đang chờ đợi vô hạn cho một sự kiện mà chỉ có thể được gây ra bởi một trong các tiến trình đang chờ đó",
+            "D. Tiến trình chạy vòng lặp vô tận do lỗi lập trình"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong ví dụ về tắc nghẽn, nếu hệ thống có 3 ổ đĩa CD RW và 3 tiến trình, mỗi tiến trình đang giữ 1 ổ đĩa và đều yêu cầu thêm 1 ổ đĩa nữa thì sự kiện các tiến trình đang chờ đợi là gì?",
+        "options": [
+            "A. \"Bộ nhớ RAM được giải phóng\"",
+            "B. \"Ổ CD RW được giải phóng\"",
+            "C. \"CPU nhàn rỗi\"",
+            "D. \"Máy in được cấp phát\""
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Tắc nghẽn sẽ xuất hiện nếu CẢ BAO NHIÊU điều kiện xảy ra đồng thời?",
+        "options": [
+            "A. 2 điều kiện",
+            "B. 3 điều kiện",
+            "C. 4 điều kiện",
+            "D. 5 điều kiện"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Điều kiện \"Độc quyền truy xuất\" (Mutual Exclusion) trong tắc nghẽn có nghĩa là gì?",
+        "options": [
+            "A. Tại một thời điểm chỉ có duy nhất 1 tiến trình sử dụng tài nguyên",
+            "B. Tiến trình có thể truy cập bất kỳ tài nguyên nào",
+            "C. Tiến trình phải trả phí để dùng tài nguyên",
+            "D. Hệ điều hành độc quyền thu hồi tài nguyên"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Điều kiện \"Giữ và đợi\" (Hold and Wait) xảy ra khi nào? 90 Nguyễn Chí Cường",
+        "options": [
+            "A. Tiến trình giữ mọi tài nguyên và đợi CPU xử lý",
+            "B. Tiến trình không giữ tài nguyên nào nhưng phải đợi",
+            "C. Một tiến trình giữ ít nhất 1 tài nguyên và đang chờ thêm tài nguyên được giữ bởi tiến trình khác",
+            "D. Tiến trình tự động lưu dữ liệu vào đĩa cứng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tình huống \"một tài nguyên có thể chỉ được giải phóng một cách tự nguyện bởi một tiến trình đang giữ nó sau khi hoàn thành tác vụ\" mô tả điều kiện nào của tắc nghẽn?",
+        "options": [
+            "A. Độc quyền truy xuất",
+            "B. Đợi vòng quanh",
+            "C. Giữ và đợi",
+            "D. Không ưu tiên (No preemption)"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Điều kiện \"Đợi vòng quanh\" (Circular wait) mô tả một tập các tiến trình {P0, P1, ..., Pn} đang chờ tài nguyên theo quy luật nào?",
+        "options": [
+            "A. P0 chờ P1, P1 chờ P2, ..., Pn chờ P0",
+            "B. Tất cả cùng chờ P0",
+            "C. Pn không chờ ai cả",
+            "D. Tiến trình có ưu tiên thấp chờ tiến trình có ưu tiên cao"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong Đồ thị cấp phát tài nguyên (RAG), tập các đỉnh V được chia thành 2 loại nào?",
+        "options": [
+            "A. RAM và CPU 91 Nguyễn Chí Cường",
+            "B. Tiến trình (P) và Tài nguyên (R)",
+            "C. Trạng thái Running và Waiting",
+            "D. Cạnh có hướng và cạnh vô hướng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong RAG, \"Cạnh yêu cầu\" (request edge) có hướng di chuyển như thế nào?",
+        "options": [
+            "A. Từ Tiến trình Pi tới Tài nguyên Rj (Pi → Rj)",
+            "B. Từ Tài nguyên Rj tới Tiến trình Pi (Rj → Pi)",
+            "C. Giữa hai Tiến trình với nhau",
+            "D. Giữa hai Tài nguyên với nhau"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Cạnh có hướng từ Tài nguyên Rj tới Tiến trình Pi (Rj → Pi) được gọi là gì?",
+        "options": [
+            "A. Cạnh yêu cầu",
+            "B. Cạnh đòi hỏi",
+            "C. Cạnh cấp phát (assignment edge)",
+            "D. Cạnh khôi phục"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Theo suy luận từ Đồ thị cấp phát tài nguyên, nếu đồ thị KHÔNG chứa vòng thì hệ thống ở trạng thái nào?",
+        "options": [
+            "A. Chắc chắn có tắc nghẽn",
+            "B. Không tắc nghẽn",
+            "C. Có khả năng tắc nghẽn",
+            "D. Tắc nghẽn mạng 92 Nguyễn Chí Cường"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu đồ thị RAG có chứa vòng và mỗi tài nguyên chỉ có 1 thực thể duy nhất, thì hệ thống sẽ ra sao?",
+        "options": [
+            "A. Không tắc nghẽn",
+            "B. Có khả năng tắc nghẽn",
+            "C. Chắc chắn bị tắc nghẽn",
+            "D. Tự động khôi phục"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nếu đồ thị RAG chứa vòng nhưng các tài nguyên có nhiều thực thể (instance), thì hệ thống sẽ ra sao?",
+        "options": [
+            "A. Có khả năng tắc nghẽn (có thể có hoặc không)",
+            "B. Chắc chắn bị tắc nghẽn",
+            "C. Chắc chắn an toàn",
+            "D. HĐH sẽ sụp đổ ngay lập tức"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Hầu hết các hệ điều hành hiện nay, bao gồm cả UNIX, thường chọn phương pháp xử lý tắc nghẽn nào?",
+        "options": [
+            "A. Luôn luôn ngăn chặn tắc nghẽn",
+            "B. Chạy các giải thuật tránh tắc nghẽn liên tục",
+            "C. Cho phép xảy ra tắc nghẽn rồi mới khôi phục",
+            "D. Bỏ qua việc xử lý tắc nghẽn, xem như hệ thống không bao giờ xảy ra tắc nghẽn"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Phương pháp \"Ngăn chặn tắc nghẽn\" (Prevention) hoạt động dựa trên nguyên tắc nào?",
+        "options": [
+            "A. Khôi phục tiến trình khi xảy ra lỗi",
+            "B. Bỏ qua hoàn toàn tắc nghẽn",
+            "C. Ngăn chặn 1 trong 4 điều kiện làm xuất hiện tắc nghẽn",
+            "D. Phân quyền người dùng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Để ngăn chặn điều kiện \"Giữ và đợi\", hệ thống yêu cầu tiến trình phải làm gì?",
+        "options": [
+            "A. Tự động hủy tài nguyên khi dùng xong",
+            "B. Yêu cầu và được cấp tất cả tài nguyên trước khi bắt đầu thực thi, hoặc chỉ được yêu cầu khi không giữ tài nguyên nào",
+            "C. Liên tục cập nhật trạng thái RAM",
+            "D. Bỏ qua các tài nguyên không dùng tới"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hạn chế lớn nhất của việc ngăn chặn điều kiện \"Giữ và đợi\" là gì?",
+        "options": [
+            "A. Gây cháy CPU",
+            "B. Việc sử dụng tài nguyên thấp và có thể gây \"đói\" tài nguyên (starvation)",
+            "C. Mất dữ liệu người dùng",
+            "D. Yêu cầu bộ nhớ đệm cực lớn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giải pháp để ngăn chặn điều kiện \"Đợi vòng quanh\" là gì? 94 Nguyễn Chí Cường",
+        "options": [
+            "A. Tắt hệ thống định kỳ",
+            "B. Đặt tất cả các loại tài nguyên vào một thứ tự, đòi hỏi mỗi tiến trình yêu cầu tài nguyên theo thứ tự tăng dần",
+            "C. Cấp phát ngẫu nhiên tài nguyên",
+            "D. Chạy luân phiên các tiến trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Phương pháp \"Tránh tắc nghẽn\" (Avoidance) yêu cầu tiến trình phải khai báo trước thông tin gì?",
+        "options": [
+            "A. Tên của người dùng tiến trình",
+            "B. Mã nguồn của chương trình",
+            "C. Số tài nguyên TỐI ĐA của mỗi loại mà tiến trình cần",
+            "D. Tốc độ CPU yêu cầu"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Mục tiêu cốt lõi của các thuật toán Tránh tắc nghẽn là gì?",
+        "options": [
+            "A. Đảm bảo hệ thống không bao giờ rơi vào \"trạng thái không an toàn\"",
+            "B. Cho phép tắc nghẽn xảy ra rồi gỡ bỏ",
+            "C. Đóng băng các tiến trình",
+            "D. Tối đa hóa hiệu năng CPU"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Hệ thống được gọi là ở \"Trạng thái an toàn\" (Safe state) khi nào?",
+        "options": [
+            "A. Khi không có tiến trình nào đang chạy",
+            "B. Khi bộ nhớ RAM trống 100% 95 Nguyễn Chí Cường",
+            "C. Tồn tại một \"chuỗi tiến trình an toàn\" <P1, P2, …, Pn> mà yêu cầu của mỗi Pi có thể được đáp ứng bởi tài nguyên sẵn có cộng với tài nguyên đang giữ bởi các Pj (j < i)",
+            "D. Khi CPU chạy dưới 50% công suất"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nhận định nào sau đây là ĐÚNG về mối quan hệ giữa trạng thái an toàn và tắc nghẽn?",
+        "options": [
+            "A. Trạng thái an toàn đồng nghĩa với tắc nghẽn",
+            "B. Trạng thái không an toàn CHẮC CHẮN là tắc nghẽn",
+            "C. Nếu hệ thống ở trạng thái không an toàn ⇒ có KHẢ NĂNG tắc nghẽn",
+            "D. Trạng thái không an toàn luôn luôn an toàn"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Đối với hệ thống mà mỗi tài nguyên CÓ NHIỀU THỰC THỂ (instances), ta sử dụng giải thuật tránh tắc nghẽn nào?",
+        "options": [
+            "A. Đồ thị cấp phát tài nguyên (RAG)",
+            "B. Giải thuật Banker",
+            "C. Giải thuật Peterson",
+            "D. Đồ thị chờ (Wait-for graph)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong phương pháp đồ thị RAG (dùng cho 1 thực thể), cạnh biểu diễn bằng nét đứt (Pi ⋯→ Rj) cho biết tiến trình Pi có thể yêu cầu tài nguyên Rj trong tương lai, được gọi là gì?",
+        "options": [
+            "A. Cạnh yêu cầu (Request edge)",
+            "B. Cạnh cấp phát (Assignment edge) 96 Nguyễn Chí Cường",
+            "C. Cạnh đòi hỏi (Claim edge)",
+            "D. Cạnh vô hướng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Theo giải thuật RAG, khi một tiến trình thực sự yêu cầu tài nguyên, cạnh đòi hỏi (nét đứt) sẽ chuyển thành cạnh gì?",
+        "options": [
+            "A. Cạnh cấp phát",
+            "B. Cạnh yêu cầu (Request edge - nét liền)",
+            "C. Vẫn giữ nguyên cạnh đòi hỏi",
+            "D. Cạnh khôi phục"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Theo giải thuật RAG tránh tắc nghẽn, một yêu cầu tài nguyên sẽ được hệ thống cấp phát CHỈ KHI NÀO?",
+        "options": [
+            "A. Khi tiến trình có độ ưu tiên cao nhất",
+            "B. Bất cứ khi nào tài nguyên đó đang rảnh rỗi",
+            "C. Khi việc chuyển từ cạnh yêu cầu thành cạnh cấp phát KHÔNG tạo thành vòng (chu trình) trong đồ thị",
+            "D. Khi người dùng nhấn nút xác nhận"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong cấu trúc dữ liệu của Giải thuật Banker, ma trận Allocation có ý nghĩa gì?",
+        "options": [
+            "A. Số thực thể tài nguyên đang sẵn sàng cho mượn",
+            "B. Số thực thể tối đa mà tiến trình yêu cầu",
+            "C. Số thực thể của tài nguyên ĐÃ ĐƯỢC CẤP PHÁT (đang giữ) cho tiến trình 97 Nguyễn Chí Cường",
+            "D. Số lượng tài nguyên cần thêm để hoàn thành tác vụ"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong Giải thuật Banker, công thức để tính số lượng tài nguyên tiến trình CÒN CẦN (Ma trận Need) là gì?",
+        "options": [
+            "A. Need[i,j] = Available[j] - Allocation[i,j]",
+            "B. Need[i,j] = Max[i,j] - Allocation[i,j]",
+            "C. Need[i,j] = Max[i,j] + Allocation[i,j]",
+            "D. Need[i,j] = Work[j] - Request[i,j]"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong Giải thuật xác định trạng thái an toàn của Banker, hệ thống sẽ chọn một tiến trình i thỏa mãn hai điều kiện nào để tiếp tục?",
+        "options": [
+            "A. Finish[i] == false và Need_i <= Work",
+            "B. Finish[i] == true và Need_i > Work",
+            "C. Allocation_i == 0 và Max_i <= Work",
+            "D. Request_i <= Available và Finish[i] == true"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Banker) Trong một hệ thống, tiến trình P0 có Max là (7, 5, 3), và Allocation hiện tại là (0, 1, 0). Vector Need của P0 sẽ là bao nhiêu?",
+        "options": [
+            "A. (7, 6, 3)",
+            "B. (7, 5, 3)",
+            "C. (7, 4, 3)",
+            "D. (0, 1, 0) 98 Nguyễn Chí Cường"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Banker) Cho Available hiện hành là (3, 3, 2). Tiến trình P1 có Need là (1, 2, 2). Theo thuật toán an toàn, P1 có thỏa mãn điều kiện Need <= Available để thực thi không?",
+        "options": [
+            "A. Có, vì 1<=3, 2<=3, 2<=2",
+            "B. Không, vì P1 cần nhiều hơn Available",
+            "C. Không xác định được",
+            "D. Có, vì Need luôn lớn hơn Available"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Banker) Trong quá trình dò tìm chuỗi an toàn, giả sử Work hiện tại là (3, 3, 2). Tiến trình P1 có Need=(1, 2, 2) và Allocation=(2, 0, 0) được chọn để hoàn thành. Sau khi P1 hoàn thành, Work MỚI sẽ bằng bao nhiêu?",
+        "options": [
+            "A. (4, 5, 4)",
+            "B. (5, 3, 2) (Work = Work + Allocation = (3,3,2) + (2,0,0) = (5,3,2))",
+            "C. (1, 1, 0)",
+            "D. (2, 0, 0)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khi một tiến trình Pi đưa ra một yêu cầu tài nguyên (Request_i), bước KIỂM TRA ĐẦU TIÊN trong Giải thuật Banker là gì?",
+        "options": [
+            "A. Kiểm tra xem Request_i <= Available không",
+            "B. Cấp phát ngay lập tức",
+            "C. Kiểm tra xem Request_i <= Need_i không (Nếu lớn hơn thì báo lỗi vì vượt quá đòi hỏi tối đa) 99 Nguyễn Chí Cường",
+            "D. Kết thúc tiến trình Pi"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Giả sử Request_i <= Need_i, bước thứ hai trong thuật toán yêu cầu tài nguyên của Banker là kiểm tra xem Request_i có <= Available không. Nếu KHÔNG thỏa mãn, hệ thống sẽ làm gì?",
+        "options": [
+            "A. Pi phải chờ vì tài nguyên không có sẵn",
+            "B. Pi bị hủy bỏ ngay lập tức",
+            "C. Lấy tài nguyên từ tiến trình khác",
+            "D. Hệ thống tự động cấp phát bỏ qua Available"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Nếu yêu cầu của tiến trình vượt qua 2 bước kiểm tra ban đầu, Giải thuật Banker sẽ GIẢ VỜ cấp phát tài nguyên cho Pi bằng cách cập nhật trạng thái hệ thống theo công thức nào?",
+        "options": [
+            "A. Available = Available + Request, Allocation = Allocation - Request",
+            "B. Available = Available - Request, Allocation = Allocation + Request, Need = Need - Request",
+            "C. Available = 0, Allocation = Max",
+            "D. Need = Max + Request"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Sau khi giả vờ cấp phát, hệ thống chạy Giải thuật an toàn. Nếu kết quả trả về là hệ thống rơi vào trạng thái \"Không an toàn\", điều gì sẽ xảy ra?",
+        "options": [
+            "A. Pi vẫn được cấp phát tài nguyên",
+            "B. HĐH tự động khởi động lại 100 Nguyễn Chí Cường",
+            "C. Pi phải chờ, và trạng thái cấp phát tài nguyên cũ được PHỤC HỒI",
+            "D. Pi sẽ bị hủy bỏ (terminate)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Banker) Giả sử trạng thái Available ban đầu là (3, 3, 2). Tiến trình P1 yêu cầu Request_1 = (1, 0, 2). Nếu giả vờ cấp phát cho P1, Available mới sẽ là bao nhiêu?",
+        "options": [
+            "A. (4, 3, 4)",
+            "B. (2, 3, 0) (Available = Available - Request = (3,3,2) - (1,0,2))",
+            "C. (3, 3, 2)",
+            "D. (0, 0, 0)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giải thuật \"Phát hiện tắc nghẽn\" (Deadlock Detection) đối với hệ thống mà MỖI TÀI NGUYÊN CHỈ CÓ 1 THỰC THỂ sử dụng phương pháp nào?",
+        "options": [
+            "A. Giải thuật Banker",
+            "B. Đồ thị chờ (Wait-for graph)",
+            "C. Giải thuật Peterson",
+            "D. Vòng lặp For"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Đồ thị chờ (Wait-for graph) được xây dựng dựa trên nguyên tắc nào?",
+        "options": [
+            "A. Các đỉnh là tài nguyên, cạnh từ R_i đến R_j",
+            "B. Các đỉnh là tiến trình, cạnh từ P_i đến P_j nếu P_i đang chờ P_j (bỏ qua các nút tài nguyên)",
+            "C. Đỉnh là CPU và RAM 101 Nguyễn Chí Cường",
+            "D. Cạnh 2 chiều giữa mọi tiến trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Theo tài liệu, để phát hiện một chu trình trong Đồ thị chờ có n đỉnh, giải thuật sẽ mất bao nhiêu thao tác lệnh (Độ phức tạp)?",
+        "options": [
+            "A. n thao tác",
+            "B. log(n) thao tác",
+            "C. n2 thao tác",
+            "D. n3 thao tác"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Giải thuật Phát hiện tắc nghẽn cho tài nguyên NHIỀU THỰC THỂ sử dụng các ma trận cấu trúc dữ liệu nào?",
+        "options": [
+            "A. Chỉ có Available",
+            "B. Available, Allocation, và Request",
+            "C. Available, Max, Need",
+            "D. Đồ thị RAG"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Khác với Banker, trong bước khởi tạo Giải thuật Phát hiện tắc nghẽn, giá trị Finish[i] được khởi tạo là false CHỈ KHI NÀO?",
+        "options": [
+            "A. Luôn luôn khởi tạo false cho mọi tiến trình",
+            "B. Khi tiến trình chưa hoàn thành",
+            "C. Khi Allocation_i != 0 (tiến trình đang giữ ít nhất 1 tài nguyên)",
+            "D. Khi Request_i == 0 102 Nguyễn Chí Cường"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Việc quyết định \"Khi nào nên gọi Giải thuật phát hiện tắc nghẽn?\" phụ thuộc vào 2 nhân tố chính nào?",
+        "options": [
+            "A. Dung lượng RAM và tốc độ CPU",
+            "B. Tắc nghẽn có thường xảy ra hay không? VÀ Có bao nhiêu tiến trình bị ảnh hưởng khi xảy ra?",
+            "C. Số lượng người dùng và băng thông mạng",
+            "D. Yêu cầu của người dùng và thời lượng Pin"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu hệ thống phát hiện có tắc nghẽn, phương pháp \"Khôi phục từ tắc nghẽn bằng cách kết thúc tiến trình\" có những lựa chọn nào?",
+        "options": [
+            "A. Hủy bỏ tất cả các tiến trình bị tắc nghẽn HOẶC Hủy bỏ từng tiến trình một cho đến khi chu kỳ tắc nghẽn được loại bỏ",
+            "B. Khởi động lại toàn bộ máy tính ngay lập tức",
+            "C. Cấp thêm tài nguyên từ mạng",
+            "D. Chuyển các tiến trình sang chạy trên máy khác"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Đâu KHÔNG PHẢI là tiêu chí để lựa chọn thứ tự hủy bỏ tiến trình (khi khôi phục tắc nghẽn)?",
+        "options": [
+            "A. Độ ưu tiên của tiến trình",
+            "B. Tài nguyên tiến trình đã sử dụng hoặc đang cần",
+            "C. Kích thước ổ cứng vật lý của máy tính",
+            "D. Tiến trình là tương tác hay theo lô 103 Nguyễn Chí Cường"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Phương pháp \"Khôi phục bằng sự ưu tiên tài nguyên\" (Resource Preemption) hoạt động bằng cách nào?",
+        "options": [
+            "A. Tự động mua thêm RAM",
+            "B. Lựa chọn một \"tiến trình nạn nhân\" để thu hồi tài nguyên (ưu tiên chi phí thấp nhất)",
+            "C. Gửi yêu cầu xin xỏ tài nguyên qua mạng lưới",
+            "D. Đóng băng tài nguyên vô thời hạn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong ưu tiên tài nguyên, kỹ thuật \"Rollback\" có ý nghĩa là gì?",
+        "options": [
+            "A. Phá hủy toàn bộ tiến trình",
+            "B. Dịch ngược mã nguồn chương trình",
+            "C. Quay trở lại một số trạng thái an toàn trước đó, và khởi động lại tiến trình ở trạng thái đó",
+            "D. Thu hồi 100% tài nguyên hệ thống"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nếu hệ thống luôn chọn CÙNG MỘT TIẾN TRÌNH làm \"nạn nhân\" để thu hồi tài nguyên, hiện tượng gì sẽ xảy ra?",
+        "options": [
+            "A. Đói tài nguyên (Starvation) - tiến trình đó sẽ không bao giờ được hoàn thành",
+            "B. Đảo độ ưu tiên",
+            "C. Hệ thống sẽ chạy nhanh gấp đôi",
+            "D. Tắc nghẽn mạng"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Theo định lý tổng quát, để tránh \"Starvation\" khi áp dụng thu hồi tài nguyên, hệ thống cần phải làm gì?",
+        "options": [
+            "A. Không bao giờ thu hồi tài nguyên",
+            "B. Giới hạn số lần (bound) một tiến trình có thể bị chọn làm nạn nhân (ví dụ thêm số lần rollback vào tham số đánh giá chi phí)",
+            "C. Luôn luôn chọn tiến trình hệ thống làm nạn nhân",
+            "D. Bắt buộc người dùng tự tắt ứng dụng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Bộ lưu trữ duy nhất nào mà CPU có thể truy cập trực tiếp?",
+        "options": [
+            "A. Đĩa từ và Băng từ",
+            "B. Bộ nhớ chính và các thanh ghi",
+            "C. Khối điều khiển thiết bị (Device Controller)",
+            "D. Ổ cứng SSD"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Cặp thanh ghi nào được sử dụng để xác định và bảo vệ không gian địa chỉ logic của tiến trình?",
+        "options": [
+            "A. Thanh ghi PC và Thanh ghi chỉ lệnh",
+            "B. Thanh ghi bộ đệm và Thanh ghi dữ liệu",
+            "C. Thanh ghi nền (Base) và Thanh ghi giới hạn (Limit)",
+            "D. Thanh ghi cờ và Thanh ghi đoạn"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Việc kết buộc địa chỉ (Address binding) vào \"Thời điểm biên dịch\" (Compile time) sẽ tạo ra loại mã nào nếu vị trí bộ nhớ đã được biết trước?",
+        "options": [
+            "A. Mã tương đối 105 Nguyễn Chí Cường",
+            "B. Mã hạt nhân",
+            "C. Mã hệ thống",
+            "D. Mã tuyệt đối (Absolute code)"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Kết buộc địa chỉ vào \"Thời điểm nạp\" (Load time) yêu cầu tạo ra loại mã nào? A. Mã tương đối (Relative code)",
+        "options": [
+            "B. Mã tuyệt đối",
+            "C. Mã nhị phân",
+            "D. Mã hợp ngữ"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Kết buộc địa chỉ bị trì hoãn đến \"Thời điểm xử lý\" (Run time) trong trường hợp nào?",
+        "options": [
+            "A. Khi hệ thống không có ổ đĩa cứng",
+            "B. Khi bộ nhớ RAM bị lỗi",
+            "C. Khi tiến trình có thể được di chuyển từ một phân đoạn bộ nhớ này sang phân đoạn khác trong suốt quá trình thực thi",
+            "D. Khi tiến trình chỉ chạy trên chế độ MS-DOS"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Địa chỉ được tạo ra bởi CPU còn được gọi là gì?",
+        "options": [
+            "A. Địa chỉ vật lý (Physical address)",
+            "B. Địa chỉ logic (Logical address) hoặc địa chỉ ảo (Virtual address)",
+            "C. Địa chỉ tương đối",
+            "D. Địa chỉ MAC"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thiết bị phần cứng nào chịu trách nhiệm ánh xạ địa chỉ ảo thành địa chỉ vật lý tại thời điểm chạy? 106 Nguyễn Chí Cường",
+        "options": [
+            "A. Đơn vị quản lý bộ nhớ (Memory-Management Unit - MMU)",
+            "B. Đơn vị số học và logic (ALU)",
+            "C. Bộ phân phối (Dispatcher)",
+            "D. Khối điều khiển tiến trình (PCB)"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Ưu điểm của kỹ thuật \"Nạp động\" (Dynamic loading) là gì?",
+        "options": [
+            "A. Thủ tục không được nạp cho đến khi nó được gọi, giúp sử dụng không gian bộ nhớ tốt hơn",
+            "B. Tiến trình không bao giờ phải thoát",
+            "C. Tăng tốc độ vòng quay ổ cứng",
+            "D. Giảm số lượng thanh ghi CPU"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong kỹ thuật \"Liên kết động\" (Dynamic linking), đoạn mã nhỏ dùng để định vị trí của thủ tục thư viện trong bộ nhớ được gọi là gì?",
+        "options": [
+            "A. Block",
+            "B. Stub",
+            "C. Thread",
+            "D. Module"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "\"Liên kết động\" đặc biệt hữu ích cho hệ thống nào?",
+        "options": [
+            "A. Hệ thống nhúng thời gian thực",
+            "B. Quản lý ổ đĩa quang",
+            "C. Các thư viện chia sẻ (Thư viện hệ thống)",
+            "D. Phần mềm diệt virus"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Hoán đổi (Swapping) tiến trình có nghĩa là gì?",
+        "options": [
+            "A. Chuyển đổi qua lại giữa giao diện dòng lệnh và đồ họa",
+            "B. Tiến trình được hoán đổi tạm thời ra khỏi bộ nhớ đến một kho lưu trữ (backing store) và sau đó đưa trở lại bộ nhớ để tiếp tục",
+            "C. Sao lưu dữ liệu dự phòng",
+            "D. Thay đổi mã nguồn tiến trình"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thuật ngữ \"Chuyển ra, chuyển vào\" (Roll out, roll in) là biến thể của kỹ thuật hoán đổi áp dụng cho giải thuật định thời nào?",
+        "options": [
+            "A. Round Robin",
+            "B. Shortest Job First (SJF)",
+            "C. Định thời theo độ ưu tiên (Priority)",
+            "D. First-Come, First-Served (FCFS)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Phần lớn thời gian của quá trình hoán đổi tiến trình (swapping) phụ thuộc vào yếu tố nào?",
+        "options": [
+            "A. Thời gian CPU tính toán",
+            "B. Thời gian di chuyển (transfer time) tỉ lệ thuận với lượng bộ nhớ được hoán đổi",
+            "C. Thời gian chờ người dùng nhập phím",
+            "D. Thời gian làm mát CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Hệ điều hành iOS trên di động xử lý thế nào khi bộ nhớ trống thấp?",
+        "options": [
+            "A. Tự động hoán đổi toàn bộ dữ liệu ra ổ cứng",
+            "B. Khởi động lại hệ điều hành",
+            "C. Yêu cầu ứng dụng tự nguyện từ bỏ bộ nhớ được cấp phát; xóa dữ liệu read-only và nạp lại khi cần 108 Nguyễn Chí Cường",
+            "D. Tắt màn hình ngay lập tức"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong cấp phát bộ nhớ liên tục, bộ nhớ chính thường được chia thành 2 phần nào?",
+        "options": [
+            "A. RAM và ROM",
+            "B. Hệ điều hành thường trú và Các tiến trình người dùng",
+            "C. Vùng nhớ Code và Vùng nhớ Data",
+            "D. Vùng nhớ Kernel và Vùng nhớ Driver"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong mô hình cấp phát liên tục với phân vùng thay đổi, khái niệm \"Hole\" (Hố nhớ) là gì?",
+        "options": [
+            "A. Lỗi phần cứng trên RAM",
+            "B. Khối nhớ có sẵn (trống) nằm rải rác khắp bộ nhớ",
+            "C. Phân vùng chứa hệ điều hành",
+            "D. Các tệp tin bị hỏng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Chiến lược cấp phát bộ nhớ \"First-fit\" hoạt động như thế nào?",
+        "options": [
+            "A. Cấp phát hố nhớ nhỏ nhất đủ lớn",
+            "B. Cấp phát hố nhớ lớn nhất",
+            "C. Cấp phát hố nhớ đầu tiên đủ lớn",
+            "D. Cấp phát từ cuối bộ nhớ lên"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Chiến lược cấp phát bộ nhớ \"Best-fit\" có đặc điểm gì?",
+        "options": [
+            "A. Cấp phát hố nhớ lớn nhất để dùng dần 109 Nguyễn Chí Cường",
+            "B. Cấp phát hố nhớ đầu tiên tìm thấy",
+            "C. Sinh ra hố nhớ còn lại lớn nhất",
+            "D. Cấp phát hố nhớ nhỏ nhất đủ lớn; phải tìm toàn bộ danh sách"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Hiện tượng \"Phân mảnh bên ngoài\" (External Fragmentation) xảy ra khi nào? A. Bộ nhớ được cấp phát lớn hơn một chút so với bộ nhớ yêu cầu",
+        "options": [
+            "B. Tổng không gian bộ nhớ tồn tại đủ để thỏa mãn yêu cầu, nhưng nó không liên tục C. Đĩa cứng bị trầy xước",
+            "D. Các tiến trình tranh giành CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Phân tích chiến lược First-fit cho thấy quy tắc 50% có ý nghĩa gì?",
+        "options": [
+            "A. 50% CPU bị lãng phí",
+            "B. Cứ N khối được cấp phát thì 0.5N khối bị mất do phân mảnh (khoảng 1/3 bộ nhớ không được sử dụng)",
+            "C. Tiến trình chỉ được dùng 50% RAM",
+            "D. Tỷ lệ lỗi bộ nhớ là 50%"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Phương pháp nào được sử dụng để giảm phân mảnh bên ngoài bằng cách bố trí lại nội dung bộ nhớ?",
+        "options": [
+            "A. Nén bộ nhớ (Compaction)",
+            "B. Bơm bộ nhớ",
+            "C. Phân mảnh bên trong",
+            "D. Định thời RR"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Cấp phát) Có các hố nhớ theo thứ tự: 600KB, 500KB, 200KB, 300KB. Tiến trình P1 yêu cầu 212KB. Theo thuật toán First-fit, P1 sẽ được cấp vào hố nhớ nào? 110 Nguyễn Chí Cường",
+        "options": [
+            "A. Hố 600KB",
+            "B. Hố 500KB",
+            "C. Hố 200KB",
+            "D. Hố 300KB"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Cấp phát) Tiếp tục với dãy hố nhớ (600, 500, 200, 300). Nếu dùng Best- fit, tiến trình P3 yêu cầu 112KB sẽ được đưa vào hố nhớ nào để tối ưu nhất?",
+        "options": [
+            "A. Hố 600KB",
+            "B. Hố 500KB",
+            "C. Hố 200KB",
+            "D. Hố 300KB"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khung nhìn của người dùng về bộ nhớ trong kỹ thuật \"Phân đoạn\" (Segmentation) là gì?",
+        "options": [
+            "A. Một khối bộ nhớ tuyến tính duy nhất",
+            "B. Một tập hợp các trang bằng nhau",
+            "C. Một tập hợp các phân đoạn (segments) có kích thước thay đổi chứa mã, dữ liệu, stack...",
+            "D. Các tập tin trên đĩa"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong kiến trúc phân đoạn, địa chỉ logic bao gồm hai thành phần nào?",
+        "options": [
+            "A. Số trang và độ lệch trang",
+            "B. Số phân đoạn (s) và độ lệch (d)",
+            "C. Base và Limit",
+            "D. Pid và Port 111 Nguyễn Chí Cường"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong bảng phân đoạn, mục Limit dùng để làm gì?",
+        "options": [
+            "A. Lưu địa chỉ vật lý bắt đầu",
+            "B. Chỉ định mức độ ưu tiên của tiến trình",
+            "C. Xác định chiều dài của phân đoạn",
+            "D. Trỏ tới bảng trang"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thanh ghi STLR (Segment-table length register) có nhiệm vụ gì?",
+        "options": [
+            "A. Chỉ ra địa chỉ của bảng phân đoạn trên đĩa cứng",
+            "B. Lưu kích thước của màn hình",
+            "C. Cho biết số phân đoạn được sử dụng bởi một chương trình (để kiểm tra s < STLR) D. Lưu tổng số RAM của máy tính"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "(Bài tập Phân đoạn) Cho bảng Segment 0 có Base=219, Limit=600. Địa chỉ logic (0, 430) tương ứng với địa chỉ vật lý nào?",
+        "options": [
+            "A. 649 (Vì 219 + 430 và 430 < 600)",
+            "B. 430",
+            "C. 219",
+            "D. Không hợp lệ"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Phân đoạn) Cho bảng Segment 1 có Base=2300, Limit=14. Địa chỉ logic (1, 10) tương ứng với địa chỉ vật lý nào?",
+        "options": [
+            "A. 2300",
+            "B. 2310",
+            "C. 140 112 Nguyễn Chí Cường",
+            "D. Lỗi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Phân đoạn) Cho bảng Segment 2 có Base=90, Limit=100. Địa chỉ logic (2, 500) sẽ ra kết quả gì?",
+        "options": [
+            "A. 590",
+            "B. 500",
+            "C. Địa chỉ có lỗi / Không hợp lệ (Do offset 500 > limit 100)",
+            "D. 90"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Kỹ thuật Phân trang (Paging) chia bộ nhớ vật lý thành các khối kích thước cố định gọi là gì?",
+        "options": [
+            "A. Khung trang (Frames)",
+            "B. Phân đoạn (Segments)",
+            "C. Sector",
+            "D. Cluster"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Kỹ thuật Phân trang chia bộ nhớ logic thành các khối kích thước cố định gọi là gì?",
+        "options": [
+            "A. Khung trang (Frames)",
+            "B. Trang (Pages)",
+            "C. Gói tin (Packets)",
+            "D. Đoạn (Segments)"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Mối quan hệ giữa kích thước Khung trang (Frame) và Trang (Page) là gì?",
+        "options": [
+            "A. Trang lớn gấp đôi Khung trang 113 Nguyễn Chí Cường",
+            "B. Khung trang lớn gấp đôi Trang",
+            "C. Kích thước Trang và Khung trang là bằng nhau",
+            "D. Không liên quan đến nhau"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Trong phân trang, địa chỉ do CPU tạo ra được chia thành 2 phần nào?",
+        "options": [
+            "A. Số đoạn (s) và độ lệch (d)",
+            "B. Số trang (p) và độ lệch trang (d)",
+            "C. Base và Limit",
+            "D. User ID và Process ID"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giả sử không gian địa chỉ logic có kích thước 2m và kích thước trang là 2n Phần \"Số trang (p)\" sẽ chiếm bao nhiêu bit?",
+        "options": [
+            "A. n bit",
+            "B. m bit",
+            "C. m−n bit",
+            "D. m+n bit"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thiết bị phần cứng dùng làm bộ đệm tham chiếu nhanh cho bảng trang có tên là gì?",
+        "options": [
+            "A. ROM",
+            "B. Thanh ghi Limit",
+            "C. Bộ nhớ kết hợp (Associative memory) hoặc TLB (Translation look-aside buffers) D. Đĩa đệm (Disk cache)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khái niệm \"Hit ratio\" (Tỷ lệ truy cập) trong TLB có ý nghĩa là gì? 114 Nguyễn Chí Cường",
+        "options": [
+            "A. Số lần CPU bị treo",
+            "B. Tỷ lệ phần trăm số trang bị lỗi",
+            "C. Tỷ lệ phần trăm số lần một số trang được tìm thấy trong thanh ghi kết hợp (TLB) D. Tốc độ quay của đĩa cứng"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Xem xét tỷ lệ Hit ratio α=80%, thời gian tìm TLB ϵ=20ns, thời gian truy cập bộ nhớ là 100ns. Thời gian truy cập hiệu quả (EAT) tính theo công thức của HĐH là bao nhiêu?",
+        "options": [
+            "A. 100ns",
+            "B. 120ns",
+            "C. 140ns",
+            "D. 200ns"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu tỷ lệ Hit ratio α=99%, thời gian tìm TLB là 20ns, truy cập bộ nhớ là 100ns. Thời gian EAT là bao nhiêu?",
+        "options": [
+            "A. 99ns",
+            "B. 100ns",
+            "C. 101ns",
+            "D. 120ns"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Để thực hiện bảo vệ bộ nhớ trong phân trang, bảng trang sử dụng thêm thành phần nào?",
+        "options": [
+            "A. Thanh ghi Base và Limit",
+            "B. Mật khẩu người dùng",
+            "C. Bit hợp lệ - không hợp lệ (valid - invalid bit)",
+            "D. Phần cứng diệt virus 115 Nguyễn Chí Cường"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Nhược điểm của kỹ thuật Phân trang (Paging) là vẫn gây ra loại phân mảnh nào?",
+        "options": [
+            "A. Phân mảnh bên ngoài",
+            "B. Phân mảnh bên trong (Internal Fragmentation)",
+            "C. Tắc nghẽn mạng",
+            "D. Phân mảnh ổ cứng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lược đồ \"Bảng trang phân cấp\" (Hierarchical Page Table) có tác dụng gì?",
+        "options": [
+            "A. Nén các tập tin lớn",
+            "B. Chia nhỏ bảng trang khổng lồ (ví dụ ở hệ thống 32-bit) thành nhiều bảng trang con để tránh cấp phát liên tục một vùng nhớ quá lớn",
+            "C. Ngăn chặn virus truy cập RAM",
+            "D. Chạy các tiến trình MS-DOS"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Đối với không gian địa chỉ lớn hơn 32-bit, hệ điều hành thường sử dụng kỹ thuật cấu trúc bảng trang nào?",
+        "options": [
+            "A. Phân đoạn thuần túy",
+            "B. Bảng trang băm (Hashed Page Table)",
+            "C. Danh sách liên kết đơn",
+            "D. Bảng cấp phát FAT"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Điểm khác biệt của \"Bảng trang nghịch đảo\" (Inverted Page Table) là gì?",
+        "options": [
+            "A. Chỉ sử dụng 1 bit duy nhất cho toàn bộ hệ thống",
+            "B. Nó theo dõi tất cả các trang vật lý: Có một mục nhập cho mỗi khung trang bộ nhớ thực (thay vì mỗi trang logic của tiến trình) 116 Nguyễn Chí Cường",
+            "C. Lưu trữ dữ liệu lộn ngược từ phải sang trái",
+            "D. Không cần dùng bộ nhớ RAM"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nhược điểm của Bảng trang nghịch đảo là gì?",
+        "options": [
+            "A. Chiếm quá nhiều RAM",
+            "B. Làm tăng thời gian tìm kiếm khi một tham chiếu trang xuất hiện (do phải duyệt bảng)",
+            "C. Không hỗ trợ địa chỉ 64-bit",
+            "D. Gây quá nhiệt CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Phân trang) Hệ thống máy tính có bộ nhớ chính 320MB. Kích thước trang là 8KB. Số khung trang vật lý của hệ thống là bao nhiêu?",
+        "options": [
+            "A. 40000",
+            "B. 40960 trang",
+            "C. 8192",
+            "D. 32000"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "(Bài tập Phân trang) Với kích thước trang là 8KB (213Bytes). Cần bao nhiêu bit để làm địa chỉ offset (độ lệch)?",
+        "options": [
+            "A. 8 bit",
+            "B. 10 bit",
+            "C. 13 bit",
+            "D. 16 bit"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Kích thước không gian địa chỉ logic là 48 bit (248Bytes). Kích thước trang là 8KB (213Bytes). Số trang logic trong không gian tiến trình là bao nhiêu?",
+        "options": [
+            "A. 235trang",
+            "B. 240 trang",
+            "C. 248 trang",
+            "D. 213trang"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Cho địa chỉ logic hệ thập phân là 20030, kích thước trang là 8192 Bytes (8KB). Yêu cầu đổi địa chỉ trên sang dạng <Số trang p, Độ lệch d>.",
+        "options": [
+            "A. <p = 2, d = 3646>",
+            "B. <p = 3, d = 2000>",
+            "C. <p = 1, d = 8192>",
+            "D. <p = 4, d = 0>"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "(Bài tập Phân trang) Không gian địa chỉ có 8 trang, mỗi trang 1KB. Ánh xạ vào bộ nhớ vật lý có 32 khung trang. Địa chỉ logic và Địa chỉ vật lý gồm bao nhiêu bit?",
+        "options": [
+            "A. Logic = 8 bit, Vật lý = 32 bit",
+            "B. Logic = 13 bit, Vật lý = 15 bit",
+            "C. Logic = 10 bit, Vật lý = 10 bit",
+            "D. Logic = 3 bit, Vật lý = 5 bit"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một hệ thống sử dụng kỹ thuật phân trang với kích thước trang là 1KB. Một địa chỉ luận lý được biểu diễn dưới dạng (Page = 5, Offset = 100). Bảng trang cho biết Page 5 được ánh xạ tới Frame 8. Địa chỉ vật lý tương ứng là bao nhiêu?",
+        "options": [
+            "A. 8100",
+            "B. 8292",
+            "C. 8192 + 100 = 8292",
+            "D. 5120"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Một hệ thống sử dụng kích thước trang là 2KB (2048 byte). Địa chỉ luận lý là 5000. Địa chỉ này thuộc trang nào?",
+        "options": [
+            "A. Trang 1",
+            "B. Trang 2",
+            "C. Trang 3",
+            "D. Trang 4"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong cơ chế quản lý bộ nhớ bằng phân trang, địa chỉ luận lý được chia thành những thành phần nào?",
+        "options": [
+            "A. Segment Number và Offset",
+            "B. Page Number và Offset",
+            "C. Frame Number và Offset",
+            "D. Process ID và Offset"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu kích thước mỗi trang là 4KB thì số byte trong một trang bằng:",
+        "options": [
+            "A. 1024 byte",
+            "B. 2048 byte",
+            "C. 4096 byte",
+            "D. 8192 byte"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Cho bảng trang: Trang Khung P0 F2 P1 F5 P2 F7 Địa chỉ luận lý (P2, 100) sẽ được ánh xạ đến địa chỉ vật lý nào?",
+        "options": [
+            "A. 7100",
+            "B. 7 × Page Size + 100",
+            "C. 2100",
+            "D. Không xác định"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thành phần nào của hệ điều hành dùng để lưu trữ thông tin ánh xạ giữa các trang và các khung trang?",
+        "options": [
+            "A. PCB",
+            "B. TLB",
+            "C. Bảng trang (Page Table)",
+            "D. Cache"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Mục tiêu chính của kỹ thuật phân trang là:",
+        "options": [
+            "A. Tăng tốc độ CPU",
+            "B. Loại bỏ phân mảnh ngoài",
+            "C. Giảm số lượng tiến trình",
+            "D. Tăng dung lượng bộ nhớ cache"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Phân mảnh trong (Internal Fragmentation) xuất hiện trong hệ thống phân trang khi:",
+        "options": [
+            "A. Trang cuối cùng không sử dụng hết dung lượng",
+            "B. RAM bị đầy",
+            "C. Có nhiều tiến trình hoạt động",
+            "D. Dùng phân đoạn"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong kỹ thuật phân đoạn, địa chỉ luận lý gồm:",
+        "options": [
+            "A. Page Number và Offset",
+            "B. Segment Number và Offset",
+            "C. Frame Number và Offset",
+            "D. PID và Segment Number"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Kỹ thuật phân đoạn phản ánh:",
+        "options": [
+            "A. Cấu trúc vật lý của RAM",
+            "B. Cấu trúc logic của chương trình",
+            "C. Cấu trúc cache",
+            "D. Cấu trúc ổ đĩa"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một đoạn có:  Base = 5000  Offset = 200 Địa chỉ vật lý là:",
+        "options": [
+            "A. 4800",
+            "B. 5000",
+            "C. 5200",
+            "D. 7000"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thanh ghi giới hạn (Limit Register) trong phân đoạn được sử dụng để:",
+        "options": [
+            "A. Tăng tốc CPU",
+            "B. Kiểm tra bảo vệ bộ nhớ",
+            "C. Quản lý cache",
+            "D. Quản lý tập tin"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu Offset lớn hơn giá trị Limit của đoạn thì điều gì xảy ra?",
+        "options": [
+            "A. Truy cập bình thường",
+            "B. Sinh lỗi địa chỉ",
+            "C. Tạo thêm đoạn mới",
+            "D. Tăng kích thước đoạn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Phát biểu nào sau đây là đúng?",
+        "options": [
+            "A. Địa chỉ vật lý được chương trình người dùng tạo trực tiếp",
+            "B. Địa chỉ vật lý được tạo sau khi MMU dịch địa chỉ luận lý",
+            "C. Địa chỉ vật lý luôn giống địa chỉ luận lý",
+            "D. Địa chỉ vật lý do ổ đĩa tạo ra"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Địa chỉ luận lý còn được gọi là:",
+        "options": [
+            "A. Địa chỉ thực",
+            "B. Địa chỉ vật lý",
+            "C. Địa chỉ ảo",
+            "D. Địa chỉ cache"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thiết bị phần cứng nào thực hiện việc chuyển đổi địa chỉ luận lý thành địa chỉ vật lý?",
+        "options": [
+            "A. ALU",
+            "B. MMU",
+            "C. Cache Controller",
+            "D. DMA Controller"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong hệ thống phân trang:",
+        "options": [
+            "A. Mọi trang đều có kích thước bằng nhau",
+            "B. Các trang có kích thước khác nhau",
+            "C. Kích thước trang thay đổi theo tiến trình",
+            "D. Không xác định kích thước trang"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong hệ thống phân đoạn:",
+        "options": [
+            "A. Mọi đoạn có kích thước bằng nhau",
+            "B. Các đoạn có kích thước khác nhau",
+            "C. Không có Offset",
+            "D. Không sử dụng bảng đoạn"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "TLB (Translation Lookaside Buffer) là:",
+        "options": [
+            "A. Bộ nhớ chính",
+            "B. Bộ nhớ cache dành cho bảng trang",
+            "C. Bảng phân đoạn",
+            "D. Thanh ghi CPU"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lợi ích lớn nhất của TLB là:",
+        "options": [
+            "A. Tăng kích thước RAM",
+            "B. Giảm số lần truy cập bộ nhớ để tra bảng trang",
+            "C. Tăng số lượng tiến trình",
+            "D. Giảm kích thước bảng trang"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Kích thước trang là 1024 byte. Địa chỉ luận lý 3075 thuộc:",
+        "options": [
+            "A. Trang 2, Offset 1027",
+            "B. Trang 3, Offset 3",
+            "C. Trang 3, Offset 27",
+            "D. Trang 4, Offset 3"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trang số 3 được ánh xạ tới khung số 9. Offset = 75 byte. Kích thước trang = 1024 byte. Địa chỉ vật lý là:",
+        "options": [
+            "A. 9075",
+            "B. 9216 + 75",
+            "C. 9291",
+            "D. 3000"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Kích thước trang là 2048 byte. Địa chỉ luận lý 6145 có Offset bằng:",
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 3"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Kích thước trang là 4096 byte. Địa chỉ luận lý 8195 thuộc trang nào?",
+        "options": [
+            "A. Trang 0",
+            "B. Trang 1",
+            "C. Trang 2",
+            "D. Trang 3"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Cho bảng đoạn: Segment Base Limit S0 1000 500 S1 3000 400 Địa chỉ luận lý (S1, 200) sẽ được ánh xạ tới địa chỉ vật lý nào?",
+        "options": [
+            "A. 2800",
+            "B. 3000",
+            "C. 3200",
+            "D. Lỗi địa chỉ"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Cho bảng đoạn: Segment Base Limit S0 1000 500 S1 3000 400 Địa chỉ luận lý (S1, 450) sẽ cho kết quả nào?",
+        "options": [
+            "A. 3450",
+            "B. 3500",
+            "C. Lỗi vượt giới hạn đoạn",
+            "D. 450"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Một hệ thống sử dụng kích thước trang 1024 byte. Địa chỉ luận lý là 2500. Địa chỉ này thuộc:",
+        "options": [
+            "A. Trang 1, Offset 452",
+            "B. Trang 2, Offset 452",
+            "C. Trang 2, Offset 500",
+            "D. Trang 3, Offset 452"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Page số 4 được ánh xạ đến Frame số 10. Offset = 100 byte. Kích thước trang = 1024 byte. Địa chỉ vật lý là:",
+        "options": [
+            "A. 10100",
+            "B. 10240 + 100",
+            "C. 10340",
+            "D. 4100"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong quá trình dịch địa chỉ, nếu xảy ra TLB Hit thì:",
+        "options": [
+            "A. Không cần truy cập bảng trang",
+            "B. Phải truy cập đĩa",
+            "C. Xuất hiện lỗi trang",
+            "D. Tạo thêm khung trang"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Nếu xảy ra TLB Miss thì:",
+        "options": [
+            "A. CPU bị dừng",
+            "B. Phải tra cứu bảng trang trong bộ nhớ",
+            "C. Xuất hiện Page Fault",
+            "D. Tạo tiến trình mới"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Kích thước trang là 4096 byte. Địa chỉ luận lý 10000 thuộc trang nào?",
+        "options": [
+            "A. Trang 1",
+            "B. Trang 2",
+            "C. Trang 3",
+            "D. Trang 4"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Với dữ liệu của câu 31, Offset bằng:",
+        "options": [
+            "A. 1808",
+            "B. 1908",
+            "C. 2000",
+            "D. 2048"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong phân trang, địa chỉ vật lý được xác định theo công thức:",
+        "options": [
+            "A. Page + Offset",
+            "B. Frame × Page Size + Offset",
+            "C. Frame + Offset",
+            "D. Page × Offset"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Ưu điểm nổi bật nhất của kỹ thuật phân đoạn là:",
+        "options": [
+            "A. Loại bỏ hoàn toàn phân mảnh trong",
+            "B. Hỗ trợ bảo vệ và chia sẻ theo cấu trúc logic",
+            "C. Không cần bảng quản lý",
+            "D. Không cần MMU"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Kỹ thuật phân trang giúp:",
+        "options": [
+            "A. Loại bỏ phân mảnh ngoài",
+            "B. Loại bỏ phân mảnh trong",
+            "C. Loại bỏ lỗi trang",
+            "D. Tăng tốc CPU"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Một không gian địa chỉ luận lý có kích thước 16 bit. Kích thước trang là 1KB. Số bit dành cho Offset là:",
+        "options": [
+            "A. 8 bit",
+            "B. 9 bit",
+            "C. 10 bit",
+            "D. 12 bit"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Dựa vào câu 36, số bit dành cho Page Number là:",
+        "options": [
+            "A. 4 bit",
+            "B. 6 bit",
+            "C. 8 bit",
+            "D. 10 bit"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một địa chỉ luận lý 16 bit sử dụng kích thước trang 1KB. Hệ thống có tối đa bao nhiêu trang?",
+        "options": [
+            "A. 32",
+            "B. 64",
+            "C. 128",
+            "D. 256"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Không gian địa chỉ 32 bit, kích thước trang 4KB. Số bit Offset là:",
+        "options": [
+            "A. 8",
+            "B. 10",
+            "C. 12",
+            "D. 16"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Không gian địa chỉ 32 bit, Page Size = 4KB. Số bit Page Number là:",
+        "options": [
+            "A. 12",
+            "B. 20",
+            "C. 24",
+            "D. 32"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một hệ thống có thời gian truy cập bộ nhớ là 100 ns. TLB Hit Ratio = 80%. Thời gian tra cứu TLB = 20 ns. Effective Access Time (EAT) là:",
+        "options": [
+            "A. 120 ns",
+            "B. 140 ns",
+            "C. 160 ns",
+            "D. 180 ns"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu Hit Ratio của TLB tăng lên thì:",
+        "options": [
+            "A. EAT tăng",
+            "B. EAT giảm",
+            "C. Bộ nhớ giảm",
+            "D. RAM giảm"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong hệ thống phân đoạn, Segment Table thường chứa:",
+        "options": [
+            "A. Base và Limit",
+            "B. Frame và Offset",
+            "C. Page và Frame",
+            "D. Cache và Buffer"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Khi một tiến trình truy cập vào trang chưa nằm trong RAM thì xảy ra:",
+        "options": [
+            "A. TLB Hit",
+            "B. Context Switch",
+            "C. Page Fault",
+            "D. Segmentation Fault"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Khi xảy ra Page Fault, hệ điều hành sẽ:",
+        "options": [
+            "A. Tăng RAM",
+            "B. Nạp trang cần thiết từ đĩa vào RAM",
+            "C. Tạo tiến trình mới",
+            "D. Xóa bảng trang"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong kỹ thuật phân đoạn kết hợp phân trang, địa chỉ luận lý gồm:",
+        "options": [
+            "A. Segment Number + Page Number + Offset",
+            "B. Frame + Offset",
+            "C. Segment + Offset",
+            "D. Page + Frame"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lợi ích chính của kỹ thuật phân đoạn kết hợp phân trang là:",
+        "options": [
+            "A. Kết hợp ưu điểm của cả hai phương pháp",
+            "B. Không cần bảng trang",
+            "C. Không cần bảng đoạn",
+            "D. Không cần MMU"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong phân trang, hai tiến trình có thể chia sẻ:",
+        "options": [
+            "A. Cùng một CPU",
+            "B. Cùng một Frame chứa mã chương trình dùng chung",
+            "C. Cùng PCB",
+            "D. Cùng PID"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Nếu kích thước trang là 2KB và kích thước tiến trình là 10KB thì số trang cần cấp phát là:",
+        "options": [
+            "A. 4",
+            "B. 5",
+            "C. 6",
+            "D. 10"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một tiến trình có kích thước 10KB. Kích thước trang là 4KB. Số trang cần cấp phát là:",
+        "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 5"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Trong hệ điều hành Linux, lệnh nào được sử dụng để hiển thị đường dẫn tuyệt đối của thư mục làm việc hiện hành?",
+        "options": [
+            "A. ls",
+            "B. pwd",
+            "C. cd",
+            "D. mkdir"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Người dùng đang ở thư mục /home/student. Để chuyển sang thư mục /etc, lệnh nào sau đây là đúng?",
+        "options": [
+            "A. pwd /etc",
+            "B. cd /etc",
+            "C. ls /etc",
+            "D. mkdir /etc"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào được sử dụng để tạo một thư mục mới có tên là Documents?",
+        "options": [
+            "A. touch Documents",
+            "B. mkdir Documents",
+            "C. cd Documents",
+            "D. cat Documents"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào dùng để tạo một tập tin rỗng có tên là data.txt?",
+        "options": [
+            "A. mkdir data.txt",
+            "B. touch data.txt",
+            "C. cat data.txt",
+            "D. pwd data.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào dùng để liệt kê danh sách tập tin và thư mục trong thư mục hiện hành?",
+        "options": [
+            "A. pwd",
+            "B. ls",
+            "C. cd",
+            "D. rm"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào được sử dụng để xóa tập tin có tên report.txt?",
+        "options": [
+            "A. del report.txt",
+            "B. erase report.txt",
+            "C. rm report.txt",
+            "D. delete report.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lệnh nào được sử dụng để sao chép tập tin a.txt thành tập tin b.txt?",
+        "options": [
+            "A. mv a.txt b.txt",
+            "B. cp a.txt b.txt",
+            "C. rename a.txt b.txt",
+            "D. cat a.txt b.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào được sử dụng để đổi tên tập tin old.txt thành new.txt?",
+        "options": [
+            "A. cp old.txt new.txt",
+            "B. rename old.txt new.txt",
+            "C. mv old.txt new.txt",
+            "D. touch new.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thư mục gốc (Root Directory) trong Linux được ký hiệu bằng:",
+        "options": [
+            "A. root",
+            "B. home",
+            "C. /",
+            "D. ~"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Ký hiệu nào biểu diễn thư mục hiện hành trong Linux?",
+        "options": [
+            "A. ..",
+            "B. /",
+            "C. .",
+            "D. ~"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Ký hiệu .. trong Linux biểu diễn:",
+        "options": [
+            "A. Thư mục gốc",
+            "B. Thư mục cha",
+            "C. Thư mục hiện hành",
+            "D. Thư mục người dùng"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Ký hiệu ~ trong Linux biểu diễn:",
+        "options": [
+            "A. Thư mục gốc",
+            "B. Thư mục cha",
+            "C. Thư mục tạm",
+            "D. Thư mục Home của người dùng"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị nội dung của tập tin văn bản?",
+        "options": [
+            "A. cat",
+            "B. chmod",
+            "C. mkdir",
+            "D. pwd"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị nội dung tập tin theo từng trang màn hình?",
+        "options": [
+            "A. less",
+            "B. rm",
+            "C. cp",
+            "D. pwd"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lệnh nào được sử dụng để tạo nhiều thư mục lồng nhau cùng lúc?",
+        "options": [
+            "A. mkdir",
+            "B. mkdir -p",
+            "C. touch",
+            "D. cd"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào được sử dụng để tìm kiếm tập tin có tên data.txt trong toàn bộ hệ thống?",
+        "options": [
+            "A. grep data.txt",
+            "B. find / -name data.txt",
+            "C. ls data.txt",
+            "D. cat data.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào dùng để tìm kiếm chuỗi ký tự \"Linux\" trong tập tin notes.txt?",
+        "options": [
+            "A. find Linux",
+            "B. grep Linux notes.txt",
+            "C. ls Linux",
+            "D. chmod Linux"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào dùng để thay đổi quyền truy cập của tập tin?",
+        "options": [
+            "A. chmod",
+            "B. chown",
+            "C. cp",
+            "D. grep"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lệnh nào dùng để thay đổi chủ sở hữu (owner) của tập tin?",
+        "options": [
+            "A. chmod",
+            "B. chown",
+            "C. mkdir",
+            "D. pwd"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Sau khi thực hiện lệnh: chmod 755 file.sh quyền truy cập của tập tin là:",
+        "options": [
+            "A. rw-r--r--",
+            "B. rwxr-xr-x",
+            "C. rwxrwxrwx",
+            "D. r-xr-xr-x"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giá trị quyền số 7 trong Linux tương ứng với:",
+        "options": [
+            "A. rwx",
+            "B. rw-",
+            "C. r-x",
+            "D. ---"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Giá trị quyền số 6 tương ứng với:",
+        "options": [
+            "A. rwx",
+            "B. rw-",
+            "C. r-x",
+            "D. ---"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Giá trị quyền số 5 tương ứng với:",
+        "options": [
+            "A. rwx",
+            "B. rw-",
+            "C. r-x",
+            "D. r--"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Giá trị quyền số 4 tương ứng với:",
+        "options": [
+            "A. r--",
+            "B. rw-",
+            "C. r-x",
+            "D. ---"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Một tập tin có quyền: rwxr-xr-- Giá trị quyền số tương ứng là:",
+        "options": [
+            "A. 755",
+            "B. 744",
+            "C. 754",
+            "D. 775"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lệnh nào được sử dụng để hiển thị danh sách các tiến trình đang chạy trên hệ thống Linux?",
+        "options": [
+            "A. ls",
+            "B. ps",
+            "C. pwd",
+            "D. mkdir"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào được sử dụng để kết thúc tiến trình có PID là 1234?",
+        "options": [
+            "A. stop 1234",
+            "B. halt 1234",
+            "C. kill 1234",
+            "D. end 1234"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị dung lượng sử dụng của các hệ thống tập tin đang được mount?",
+        "options": [
+            "A. free",
+            "B. du",
+            "C. df",
+            "D. mount"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị dung lượng thư mục hiện hành và các thư mục con?",
+        "options": [
+            "A. du",
+            "B. df",
+            "C. pwd",
+            "D. ps"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị thông tin bộ nhớ RAM của hệ thống?",
+        "options": [
+            "A. mount",
+            "B. free",
+            "C. grep",
+            "D. topfile"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị 10 dòng đầu tiên của tập tin data.txt?",
+        "options": [
+            "A. tail data.txt",
+            "B. head data.txt",
+            "C. cat data.txt",
+            "D. grep data.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị 10 dòng cuối cùng của tập tin data.txt?",
+        "options": [
+            "A. head data.txt",
+            "B. grep data.txt",
+            "C. tail data.txt",
+            "D. more data.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lệnh nào dùng để hiển thị lịch sử các lệnh đã thực hiện trong Shell?",
+        "options": [
+            "A. history",
+            "B. hist",
+            "C. log",
+            "D. cmd"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Để nén tập tin report.txt bằng gzip, sử dụng lệnh nào?",
+        "options": [
+            "A. zip report.txt",
+            "B. tar report.txt",
+            "C. gzip report.txt",
+            "D. compress report.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Để giải nén tập tin report.txt.gz, sử dụng lệnh nào?",
+        "options": [
+            "A. unzip report.txt.gz",
+            "B. extract report.txt.gz",
+            "C. gunzip report.txt.gz",
+            "D. untar report.txt.gz"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Cho cây thư mục sau: /home/student ├── docs │ └── report.txt └── data Người dùng đang ở thư mục /home/student. Đường dẫn tương đối để truy cập tập tin report.txt là:",
+        "options": [
+            "A. /docs/report.txt",
+            "B. docs/report.txt",
+            "C. /home/docs/report.txt",
+            "D. ~/report.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Người dùng đang ở thư mục: /home/student/docs Sau khi thực hiện lệnh: cd .. Người dùng sẽ chuyển đến thư mục nào?",
+        "options": [
+            "A. /home",
+            "B. /home/student",
+            "C. /",
+            "D. /docs"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Người dùng hiện đang ở: /home/student/docs Sau khi thực hiện: cd ~ Người dùng sẽ chuyển đến:",
+        "options": [
+            "A. /",
+            "B. /root",
+            "C. /home/student",
+            "D. /tmp"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lệnh nào dùng để sao chép toàn bộ thư mục project sang thư mục backup?",
+        "options": [
+            "A. cp project backup",
+            "B. cp -r project backup",
+            "C. mv project backup",
+            "D. mkdir backup"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Lệnh nào dùng để xóa thư mục temp cùng toàn bộ nội dung bên trong?",
+        "options": [
+            "A. rmdir temp",
+            "B. rm temp",
+            "C. rm -r temp",
+            "D. del temp"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Lệnh nào được sử dụng để tạo Hard Link?",
+        "options": [
+            "A. ln source.txt hardlink.txt",
+            "B. ln -s source.txt hardlink.txt",
+            "C. cp source.txt hardlink.txt",
+            "D. link -h source.txt"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Lệnh nào được sử dụng để tạo Symbolic Link (Soft Link)?",
+        "options": [
+            "A. ln file1 file2",
+            "B. cp file1 file2",
+            "C. ln -s file1 file2",
+            "D. mv file1 file2"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Đặc điểm nào sau đây đúng đối với Hard Link?",
+        "options": [
+            "A. Có thể liên kết đến thư mục từ hệ thống tập tin khác",
+            "B. Chứa đường dẫn đến tập tin gốc",
+            "C. Chia sẻ cùng inode với tập tin gốc",
+            "D. Luôn có kích thước bằng 0 byte"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Đặc điểm nào sau đây đúng đối với Symbolic Link?",
+        "options": [
+            "A. Có cùng inode với tập tin gốc",
+            "B. Chứa đường dẫn tham chiếu tới tập tin gốc",
+            "C. Không thể liên kết tới thư mục",
+            "D. Không thể liên kết qua phân vùng khác"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thư mục nào trong Linux thường chứa các tập tin cấu hình hệ thống?",
+        "options": [
+            "A. /bin",
+            "B. /etc",
+            "C. /dev",
+            "D. /home"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Thư mục nào chứa các chương trình thực thi cơ bản của hệ điều hành Linux?",
+        "options": [
+            "A. /etc",
+            "B. /home",
+            "C. /bin",
+            "D. /tmp"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Thư mục nào thường chứa các tập tin thiết bị (device files)?",
+        "options": [
+            "A. /dev",
+            "B. /etc",
+            "C. /usr",
+            "D. /var"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Một tập tin có quyền: rw-r--r-- Giá trị số tương ứng là:",
+        "options": [
+            "A. 755",
+            "B. 644",
+            "C. 600",
+            "D. 744"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Một tập tin có quyền: rwx------ Giá trị số tương ứng là:",
+        "options": [
+            "A. 700",
+            "B. 600",
+            "C. 755",
+            "D. 777"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Trong các phương pháp cấp phát tập tin dưới đây, phương pháp nào sử dụng một khối chỉ mục (Index Block) để lưu địa chỉ các khối dữ liệu của tập tin?",
+        "options": [
+            "A. Contiguous Allocation (Cấp phát liên tục)",
+            "B. Linked Allocation (Cấp phát liên kết)",
+            "C. Indexed Allocation (Cấp phát theo chỉ mục)",
+            "D. Sequential Allocation"
+        ],
+        "answer": 2
+    }
+]
