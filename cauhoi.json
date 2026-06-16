@@ -3751,7 +3751,8 @@
  "options": [
  "A. Chỉ ra địa chỉ của bảng phân đoạn trên đĩa cứng",
  "B. Lưu kích thước của màn hình",
- "C. Cho biết số phân đoạn được sử dụng bởi một chương trình (để kiểm tra s < STLR) D. Lưu tổng số RAM của máy tính"
+ "C. Cho biết số phân đoạn được sử dụng bởi một chương trình (để kiểm tra s < STLR)",
+ "D. Lưu tổng số RAM của máy tính"
  ],
  "answer": 2
  },
